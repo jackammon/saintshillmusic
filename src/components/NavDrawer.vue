@@ -1,8 +1,8 @@
 <template>
     <div class="nav-drawer" ref="drawer">
-      <v-list style="background-color: #1072fa; color: #fffdf9; margin-top: 84px;">
+      <v-list style="background-color: #000000; color: #fffdf9; margin-top: 84px;">
           <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
-            <v-list-item-title :color="isOpen ? '#1072fa' : '#fffdf9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
+            <v-list-item-title :color="isOpen ? '#000000' : '#fffdf9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
           </v-list-item>
       </v-list>
     </div>
@@ -21,9 +21,9 @@ const props = defineProps({
 });
 
 const menuItems = [
+  { title: 'Music', link: '/music' },
+  { title: 'Merch', link: '/merch' },
   { title: 'About', link: '/about' },
-  { title: 'Contact', link: '/contact' },
-  { title: 'Resume', link: '/resume' }
 ];
 
 function toLink(link) {
@@ -57,7 +57,7 @@ watch(() => props.isOpen, (newValue) => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1072fa;
+  background-color: #000000;
   z-index: 999;
   display: flex;
   flex-direction: column;

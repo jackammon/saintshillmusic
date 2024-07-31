@@ -2,18 +2,11 @@
   <v-containter>
     <v-row>
       <v-col :cols="mdAndUp ? 5 : 12" class="gap-right"> 
-        <img src="../assets/avatar-full.jpg" alt="avatar" /> 
+        <!-- <img src="../assets/avatar-full.jpg" alt="avatar" />  -->
       </v-col>
       <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
         <div class="content">
-          <h1 class="text-left">Jack Ammon</h1> 
-          <h2 class="text-left mb-10">Product Focused Software Engineer</h2>
-
-          <p class="text-left mb-7">With over {{experienceYearsInWords}} years of experience, I specialize in building and maintaining software products. After earning a B.S. in Computer Science from George Fox University, I joined a small custom software firm where I contributed to the development of more than half a dozen software products. Working at a smaller company offered me the opportunity to wear multiple hats and make significant contributions to our projects. I worked directly with clients translating their ideas to reality. I then joined Webconnex, where I am currently on the payments team working on their core platform maintaining and improving their products.</p>
-
-          <p class="text-left mb-7">I have experience writing code across various tech stacks, developing custom tools, integrating third-party services, and setting up CI/CD pipelines. Additionally, I have managed infrastructure on AWS and Azure, and configured servers for both development and production environments.</p>
-
-          <p class="text-left mb-7">I am passionate about the human side of technology and desire to build products that improve the lives of users. I value well-designed products that are built to last and be reused.</p>
+         
         </div> 
       </v-col> 
     </v-row>

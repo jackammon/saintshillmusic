@@ -3,11 +3,7 @@
     <v-row class="text-center">
       <v-col>
         <div class="effect">
-          <div class="contact">
-              <h2>You can reach me at</h2>
-              <h1><a href="mailto:hello@jck.codes">&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6a;&#x63;&#x6b;&#x2e;&#x63;&#x6f;&#x64;&#x65;&#x73;</a></h1>
-              <h1>&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</h1>
-          </div>
+       
         </div>
       </v-col>
     </v-row>

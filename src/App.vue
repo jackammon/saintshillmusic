@@ -14,7 +14,10 @@
         hide-slider
         v-model="currentTab"
       >
-        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">JCK</v-tab>
+        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
+          <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints Hill Music" class="header-img"/> 
+          <img v-if="drawer" src="./assets/logo-white.png" alt="Saints Hill Music" class="header-img"/> 
+        </v-tab>
         <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
 
@@ -39,7 +42,7 @@
 
     <!-- floating nav footer -->
     <div v-if="drawer" class="floating-footer">
-      jck.codes 
+      Saints Hill Music 
     </div>
 
     <v-main class="pa-0 fill-height">
@@ -51,21 +54,6 @@
         </v-row>
       </v-container>
     </v-main>
-
-    <v-btn
-      icon
-      variant="plain"
-      size="large"
-      :color="!drawer ? 'black' : '#fffdf9'"
-      href="http://www.linkedin.com/in/jackammon"
-      target="_blank"
-      class="ma-2"
-      location="bottom end"
-      position="fixed"
-      style="z-index: 9999 !important;"
-    >
-      <v-icon size="large">mdi-linkedin</v-icon>
-    </v-btn>
 
   </v-app>
 </template>
@@ -129,6 +117,11 @@ onMounted(() => {
   color: #fffdf9;
   text-transform: uppercase;
   font-family: 'Rubik';
+}
+
+.header-img {
+  width: 60px;
+  height: 60px;
 }
 
 @media (max-width: 960px) {
