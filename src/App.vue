@@ -64,12 +64,6 @@ import NavDrawer from './components/NavDrawer.vue';
 
 const drawer = ref(false);
 
-onMounted(() => {
-  console.log("Hi there 👋");
-  console.log("I built this website using Vue3, Vuetify, Vite, and GSAP");
-  console.log("If you'd like to get in contact with me, my information is found under the contact page");
-  console.log("Thanks for stopping by!");
-});
 </script>
 
 <style lang="scss">
