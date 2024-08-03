@@ -12,25 +12,39 @@
 import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
+import dayjs from 'dayjs';
 
 export default {
   setup() {
     const textElement = ref(null);
     const texts = [
-      "Saints Hill Music",
-      "Live Recording August 31st",
-      "Debut Album October 6",
+      { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
+      { text: "Debut Album \"Family\" Out August 30th", liveDate: '2023-08-30', expirationDate: '2024-08-31' },
+      { text: "Debut Album \"Family\" Out Now ", liveDate: '2024-08-31', expirationDate: null },
+      { text: "Live Recording August 31st", liveDate: '2023-08-31', expirationDate: null },
+      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2023-10-06', expirationDate: null },
     ];
     let currentText = 0;
 
-    function animateText() {
-      if (currentText >= texts.length) currentText = 0; // Loop back to the first text
+    function isTextValid(textObj) {
+      const now = dayjs();
+      const liveDate = textObj.liveDate ? dayjs(textObj.liveDate) : null;
+      const expirationDate = textObj.expirationDate ? dayjs(textObj.expirationDate) : null;
+      return (!liveDate || now.isAfter(liveDate)) && (!expirationDate || now.isBefore(expirationDate));
+    }
+
+    function getFilteredTexts() {
+      return texts.filter(isTextValid);
+    }
+
+    function animateText(filteredTexts) {
+      if (currentText >= filteredTexts.length) currentText = 0; // Loop back to the first text
       gsap.to(textElement.value, {
-        duration: 2,
-        text: texts[currentText],
+        duration: 2.5,
+        text: filteredTexts[currentText].text,
         onComplete: () => {
           // Wait some time before starting the next animation
-          gsap.to(textElement.value, { delay: 2.5, onComplete: animateText });
+          gsap.to(textElement.value, { delay: 2.5, onComplete: () => animateText(filteredTexts) });
         }
       });
       currentText++;
@@ -38,7 +52,10 @@ export default {
 
     onMounted(() => {
       gsap.registerPlugin(TextPlugin);
-      animateText(); // Start the animation loop
+      const filteredTexts = getFilteredTexts();
+      if (filteredTexts.length > 0) {
+        animateText(filteredTexts); // Start the animation loop with filtered texts
+      }
     });
 
     return {
@@ -49,7 +66,6 @@ export default {
 </script>
 
 <style scoped>
-
 body {
   display: flex;
   align-items: center;
@@ -97,5 +113,4 @@ body {
     transform: translate(-50%, -40%);
   }
 }
-
 </style>
