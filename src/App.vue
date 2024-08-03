@@ -15,8 +15,8 @@
         v-model="currentTab"
       >
         <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
-          <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints Hill Music" class="header-img"/> 
-          <img v-if="drawer" src="./assets/logo-white.png" alt="Saints Hill Music" class="header-img"/> 
+          <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
+          <img v-if="drawer" src="./assets/logo-white.png" alt="Saints' Hill Music" class="header-img"/> 
         </v-tab>
         <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
@@ -42,7 +42,7 @@
 
     <!-- floating nav footer -->
     <div v-if="drawer" class="floating-footer">
-      Saints Hill Music 
+      Saints' Hill Music 
     </div>
 
     <v-main class="pa-0 fill-height">

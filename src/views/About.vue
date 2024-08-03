@@ -6,7 +6,7 @@
       </v-col>
       <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
         <div class="content">
-         
+          Coming Soon
         </div> 
       </v-col> 
     </v-row>
@@ -16,30 +16,9 @@
 <script>
 import { useDisplay } from 'vuetify'
 
-function numberToWords(num) {
-  const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
-  return words[num] || num.toString();
-}
-
-function calculateExperienceYears(startDate) {
-  const start = new Date(startDate);
-  const now = new Date();
-  const diff = now.getFullYear() - start.getFullYear();
-  const m = now.getMonth() - start.getMonth();
-  if (m < 0 || (m === 0 && now.getDate() < start.getDate())) {
-    return diff - 1;
-  }
-  return diff;
-}
-
 export default {
   setup () {
     const { mdAndUp } = useDisplay();
-    
-    const startDate = new Date('2019-04-01');
-    const experienceYears = calculateExperienceYears(startDate);
-    const experienceYearsInWords = numberToWords(experienceYears);
-
     return { mdAndUp, experienceYearsInWords };
   }
 }

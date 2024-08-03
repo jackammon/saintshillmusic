@@ -2,8 +2,10 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home.vue'
-import Contact from './views/Contact.vue'
+import Music from './views/Music.vue'
 import About from './views/About.vue'
+import Event from './views/Event.vue'
+import Merch from './views/Merch.vue'
 
 const routes = [
   {
@@ -14,12 +16,22 @@ const routes = [
   {
     path: '/music',
     name: 'music',
-    component: Contact
+    component: Music
+  },
+  {
+    path: '/merch',
+    name: 'merch',
+    component: Merch
   },
   {
     path: '/about',
     name: 'about',
     component: About
+  },
+  {
+    path: '/events',
+    name: 'events',
+    component: Event
   },
   {
     // Redirect any unmatched paths to root

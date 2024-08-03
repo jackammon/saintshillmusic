@@ -21,9 +21,10 @@ const props = defineProps({
 });
 
 const menuItems = [
+  { title: 'Live Recording', link: '/events' },
   { title: 'Music', link: '/music' },
   { title: 'Merch', link: '/merch' },
-  { title: 'About', link: '/about' },
+  // { title: 'About', link: '/about' },
 ];
 
 function toLink(link) {
