@@ -4,7 +4,7 @@
       flat
       color="rgba(0, 0, 0, 0.0)"
       class="nav"
-      style="padding-right: 15px; padding-top: 5px"
+      style="padding-right: 15px;"
     >
       <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
         <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
@@ -96,6 +96,7 @@ function toHome() {
   justify-content: start !important;
   position: absolute;
   padding-left: 21px !important;
+  padding-top: 5px;
   cursor: pointer;
 }
 
