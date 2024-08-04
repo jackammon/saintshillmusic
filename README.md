@@ -31,7 +31,7 @@ pnpm build
 ```
 
 ## Deployment
-The portfolio is automatically deployed to GitHub Pages whenever changes are pushed to the master branch, thanks to the GitHub Actions workflow defined in .github/workflows/deploy-to-gh-pages.yml.  
+The website is automatically deployed to GitHub Pages whenever changes are pushed to the master branch, thanks to the GitHub Actions workflow defined in .github/workflows/deploy-to-gh-pages.yml.  
 
 Noteworthy aspects of the deployment process for Github pages include:
 
