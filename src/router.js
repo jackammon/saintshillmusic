@@ -6,7 +6,7 @@ import Music from './views/Music.vue'
 import About from './views/About.vue'
 import Event from './views/Event.vue'
 import Merch from './views/Merch.vue'
-import Family from './views/Linktree.vue'
+import Linktree from './views/Linktree.vue'
 
 const routes = [
   {
@@ -37,7 +37,17 @@ const routes = [
   {
     path: '/family',
     name: 'family',
-    component: Family
+    component: Linktree
+  },
+  {
+    path: '/updates',
+    name: 'updates',
+    component: Linktree
+  },
+  {
+    path: '/links',
+    name: 'links',
+    component: Linktree
   },
   {
     // Redirect any unmatched paths to root

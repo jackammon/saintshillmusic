@@ -74,10 +74,6 @@ function toHome() {
   background-color: #fffdf9 !important;
 }
 
-.header {
-  
-}
-
 .btn-size {
   font-size: 12pt !important;
   font-weight: 700 !important;
