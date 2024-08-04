@@ -1,25 +1,16 @@
 <template>
   <v-app id="app">
     <v-app-bar
-      absolute
       flat
       color="rgba(0, 0, 0, 0.0)"
       class="nav"
-      style="padding-right: 15px;"
+      style="padding-right: 15px; padding-top: 5px"
     >
-      <v-tabs
-        background-color="transparent"
-        color="black"
-        grow
-        hide-slider
-        v-model="currentTab"
-      >
-        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
-          <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
-          <img v-if="drawer" src="./assets/logo-white.png" alt="Saints' Hill Music" class="header-img"/> 
-        </v-tab>
-        <v-spacer style="width: 80%"></v-spacer>
-      </v-tabs>
+      <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
+        <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
+        <img v-if="drawer" src="./assets/logo-white.png" alt="Saints' Hill Music" class="header-img"/> 
+      </div>
+      <v-spacer style="width: 80%"></v-spacer>
 
       <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'" style="left: 4px;">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
@@ -61,8 +52,15 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import NavDrawer from './components/NavDrawer.vue';
+import { useRouter } from 'vue-router'
 
 const drawer = ref(false);
+const router = useRouter();
+
+function toHome() {
+  drawer.value = false
+  router.push('/');
+}
 
 </script>
 
@@ -74,6 +72,10 @@ const drawer = ref(false);
   text-align: center;
   color: #000;
   background-color: #fffdf9 !important;
+}
+
+.header {
+  
 }
 
 .btn-size {
@@ -94,6 +96,7 @@ const drawer = ref(false);
   justify-content: start !important;
   position: absolute;
   padding-left: 21px !important;
+  cursor: pointer;
 }
 
 .app-padding {
@@ -114,8 +117,8 @@ const drawer = ref(false);
 }
 
 .header-img {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
 }
 
 @media (max-width: 960px) {

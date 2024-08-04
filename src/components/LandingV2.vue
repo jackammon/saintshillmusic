@@ -19,10 +19,11 @@ export default {
     const textElement = ref(null);
     const texts = [
       { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
-      { text: "Debut Album \"Family\" Out August 30th", liveDate: '2023-08-30', expirationDate: '2024-08-31' },
+      { text: "Debut Album \"Family\" Out August 30th", liveDate: null, expirationDate: '2024-08-31' },
       { text: "Debut Album \"Family\" Out Now ", liveDate: '2024-08-31', expirationDate: null },
-      { text: "Live Recording August 31st", liveDate: '2023-08-31', expirationDate: null },
-      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2023-10-06', expirationDate: null },
+      { text: "Live Recording August 31st", liveDate: null, expirationDate: '2024-08-31' },
+      { text: "See you there :)", liveDate: null, expirationDate: '2024-08-31' },
+      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2024-08-31', expirationDate: null },
     ];
     let currentText = 0;
 

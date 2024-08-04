@@ -30,9 +30,10 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'Saints\' Hill Music',
       links: [
-        { title: 'Pre-save Single "God is Good"', url: 'https://presave-link-for-single-1.com', albumArt: 'https://www.casualfanmusic.com/static/media/BA.5e3601b938a6705c1a1c.jpg' },
-        { title: 'Pre-save Single "A Holy Communion', url: 'https://presave-link-for-single-2.com', albumArt: null },
-        { title: 'Pre-save Debut Album "Family"', url: 'https://presave-link-for-album.com', albumArt: 'https://www.casualfanmusic.com/static/media/IDATD.b612f0dcd58358208d3a.jpg' },
+        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        { title: 'Pre-save Single "A Holy Communion"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
+        { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        { title: 'Pre-save Debut Album "Family"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
       ],
     };
   },
