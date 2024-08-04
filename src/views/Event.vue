@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col>
         <div class="effect">
-          more info coming soon
+          COME BACK SOON FOR MORE INFO
         </div>
       </v-col>
     </v-row>

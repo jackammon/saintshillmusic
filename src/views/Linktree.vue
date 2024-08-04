@@ -1,4 +1,3 @@
-<!-- src/components/LinktreeLandingPage.vue -->
 <template>
   <div class="linktree-container">
     <div class="header">
@@ -13,6 +12,7 @@
         :url="link.url"
         :album-art="link.albumArt"
       />
+      <div class="empty" v-if="!links.length > 0">come back soon for new updates</div>
     </div>
   </div>
 </template>
@@ -28,12 +28,12 @@ export default {
   data() {
     return {
       profileImage: 'path/to/your/profile-image.jpg',
-      artistName: 'Saints\' Hill Music',
+      artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
-        { title: 'Pre-save Single "A Holy Communion"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
-        { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
-        { title: 'Pre-save Debut Album "Family"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        // { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        // { title: 'Pre-save Single "A Holy Communion"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
+        // { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        // { title: 'Pre-save Debut Album "Family"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
       ],
     };
   },
@@ -74,5 +74,17 @@ export default {
 
 .link-item {
   margin: 10px 0;
+}
+
+.empty {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rubik' !important;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: -.02em !important;
+  text-align: left;
 }
 </style>

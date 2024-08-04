@@ -12,7 +12,7 @@
       </div>
       <v-spacer style="width: 80%"></v-spacer>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'" style="left: 4px;">
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 

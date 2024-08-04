@@ -1,4 +1,3 @@
-<!-- src/components/LinkItem.vue -->
 <template>
   <a :href="url" class="link-item" target="_blank" rel="noopener noreferrer">
     <div class="link-content">

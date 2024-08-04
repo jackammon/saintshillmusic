@@ -18,12 +18,13 @@ export default {
   setup() {
     const textElement = ref(null);
     const texts = [
-      { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
       { text: "Debut Album \"Family\" Out August 30th", liveDate: null, expirationDate: '2024-08-31' },
       { text: "Debut Album \"Family\" Out Now ", liveDate: '2024-08-31', expirationDate: null },
       { text: "Live Recording August 31st", liveDate: null, expirationDate: '2024-08-31' },
       { text: "See you there :)", liveDate: null, expirationDate: '2024-08-31' },
-      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2024-08-31', expirationDate: null },
+      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2024-08-31', expirationDate: '2024-10-06' },
+      { text: "\"Family: Live From Newberg\" Out Now", liveDate: '2024-10-06', expirationDate: null },
+      { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
     ];
     let currentText = 0;
 
@@ -41,7 +42,7 @@ export default {
     function animateText(filteredTexts) {
       if (currentText >= filteredTexts.length) currentText = 0; // Loop back to the first text
       gsap.to(textElement.value, {
-        duration: 2.5,
+        duration: 3,
         text: filteredTexts[currentText].text,
         onComplete: () => {
           // Wait some time before starting the next animation

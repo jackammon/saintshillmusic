@@ -1,77 +1,73 @@
-<!-- src/components/LinktreeLandingPage.vue -->
 <template>
-  <div class="linktree-container">
-    <div class="header">
-      <!-- <img :src="profileImage" alt="Profile Image" class="profile-image" /> -->
-      <h1 class="artist-name">{{ artistName }}</h1>
-    </div>
-    <div class="links">
-      <LinkItem
-        v-for="(link, index) in links"
-        :key="index"
-        :title="link.title"
-        :url="link.url"
-        :album-art="link.albumArt"
-      />
-    </div>
-  </div>
+  <v-container>
+    <AlbumRow v-for="album in albums" :key="album.id" :album="album" />
+  </v-container>
 </template>
 
 <script>
-import LinkItem from '../components/LinkItem.vue';
+import AlbumRow from '../components/AlbumRow.vue';
+import dayjs from 'dayjs';
 
 export default {
-  name: 'LinktreeLandingPage',
   components: {
-    LinkItem,
+    AlbumRow
+  },
+  mounted() {
+   
   },
   data() {
     return {
-      profileImage: 'path/to/your/profile-image.jpg',
-      artistName: 'Saints\' Hill Music',
-      links: [
-        { title: 'Pre-save Single "God is Good"', url: 'https://presave-link-for-single-1.com', albumArt: 'https://www.casualfanmusic.com/static/media/BA.5e3601b938a6705c1a1c.jpg' },
-        { title: 'Pre-save Single "A Holy Communion', url: 'https://presave-link-for-single-2.com', albumArt: null },
-        { title: 'Pre-save Debut Album "Family"', url: 'https://presave-link-for-album.com', albumArt: 'https://www.casualfanmusic.com/static/media/IDATD.b612f0dcd58358208d3a.jpg' },
-      ],
+      albums: [
+        {
+          id: 1,
+          albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg',
+          title: "Family",
+          year: '2024',
+          date: '2024-08-30',
+          recordingInfo: "Recorded at Greg's House / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          credits: [
+            "Vocals, Guitar / Jacob Vigil",
+            "Vocals / Hannah Brown",
+            "Vocals / Molly Onyemaobim",
+            "Vocals / Lauren Fotenos",
+            "Vocals / Summer Lamb",
+            "Guitar / Nick Sullivan",
+            "Keys, Guitar / Jack Ammon",
+            "Keys, Guitar, Bass, Drums / Michael Rabb",
+            // "Drums / Florida Man",
+          ],
+          location: "These songs were written and recorded in Newberg, Oregon.",
+          urls: {
+            spotify: null,
+            apple: null,
+          }
+        },
+        // {
+        //   id: 2,
+        //   albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg',
+        //   title: "Family: Live From Newberg",
+        //   year: 2024,
+        //   date: '2024-10-06',
+        //   recordingInfo: "Recorded at Greg's House / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+        //   credits: "Vocals, Guitar / Nathan Stephenson\nVocals, Guitar / Stevie Lujan\nVocals, Synth / Esther Moran\nGuitar / Cameron Crew\nBass / Rei Wasserman\nDrums / Blair Mottau",
+        //   location: "These songs were recorded live in Newberg, Oregon on August 31st, 2024."
+        // },
+      ]
     };
   },
+  methods: {
+     isRecordReleased(record) {
+      const now = dayjs();
+      const liveDate = record.date ? dayjs(record.liveDate) : null;
+      const expirationDate = record.expirationDate ? dayjs(record.expirationDate) : null;
+      return (!liveDate || now.isAfter(liveDate)) && (!expirationDate || now.isBefore(expirationDate));
+    }
+  }
 };
 </script>
 
 <style scoped>
-.linktree-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  min-height: 100vh;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.profile-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.artist-name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 400px;
-}
-
-.link-item {
-  margin: 10px 0;
+.v-container {
+  padding-top: 15px;
 }
 </style>
