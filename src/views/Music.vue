@@ -20,7 +20,7 @@ export default {
       albums: [
         {
           id: 1,
-          albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg',
+          albumArt: 'src/assets/family.webp',
           title: "Family",
           year: '2024',
           date: '2024-08-30',
