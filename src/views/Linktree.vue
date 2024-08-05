@@ -3,6 +3,17 @@
     <div class="header">
       <!-- <img :src="profileImage" alt="Profile Image" class="profile-image" /> -->
       <h1 class="artist-name">{{ artistName }}</h1>
+      <div class="social-links">
+        <a href="https://open.spotify.com/artist/artist_id" target="_blank" class="social-link">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://music.apple.com/us/artist/artist_id" target="_blank" class="social-link">
+          <i class="fab fa-apple"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/channel_id" target="_blank" class="social-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
     </div>
     <div class="links">
       <LinkItem
@@ -12,13 +23,14 @@
         :url="link.url"
         :album-art="link.albumArt"
       />
-      <div class="empty" v-if="!links.length > 0">come back soon for new updates</div>
+      <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
   </div>
 </template>
 
 <script>
 import LinkItem from '../components/LinkItem.vue';
+import imageURL from '@/assets/family.webp';
 
 export default {
   name: 'LinktreeLandingPage',
@@ -30,7 +42,7 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        // { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
+        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  albumArt: imageURL },
         // { title: 'Pre-save Single "A Holy Communion"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
         // { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
         // { title: 'Pre-save Debut Album "Family"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
@@ -63,6 +75,18 @@ export default {
 .artist-name {
   font-size: 24px;
   font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-link {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #000;
 }
 
 .links {

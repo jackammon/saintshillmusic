@@ -32,7 +32,7 @@ export default {
   display: block;
   padding: 15px;
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   text-decoration: none;
@@ -55,9 +55,13 @@ export default {
 .album-art {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 200px;
-  height: 200px;
+  width: 225px;
+  height: 225px;
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.title {
+  text-transform: uppercase;
 }
 </style>
