@@ -7,7 +7,7 @@
 <script>
 import AlbumRow from '../components/AlbumRow.vue';
 import dayjs from 'dayjs';
-import imageUrl from '@/assets/images/family.webp'
+import imageUrl from '@/assets/family.webp'
 
 export default {
   components: {
