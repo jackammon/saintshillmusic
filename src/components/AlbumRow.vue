@@ -1,7 +1,7 @@
 <template>
   <v-row class="album-row">
     <v-col :cols="mdAndUp ? 5 : 12" class="gap-right"> 
-      <img v-if="album.albumArt" :src="'/assets/' + album.albumArt" alt="Album Art" />
+      <img v-if="album.albumArt" :src="album.albumArt" alt="Album Art" />
     </v-col>
     <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
       <div class="content">

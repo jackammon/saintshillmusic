@@ -20,7 +20,7 @@ export default {
       albums: [
         {
           id: 1,
-          albumArt: 'family.webp',
+          albumArt: 'src/assets/family.webp',
           title: "Family",
           year: '2024',
           date: '2024-08-30',
