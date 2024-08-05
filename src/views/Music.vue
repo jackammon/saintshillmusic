@@ -7,6 +7,7 @@
 <script>
 import AlbumRow from '../components/AlbumRow.vue';
 import dayjs from 'dayjs';
+import imageUrl from '@/assets/images/family.webp'
 
 export default {
   components: {
@@ -20,7 +21,7 @@ export default {
       albums: [
         {
           id: 1,
-          albumArt: 'src/assets/family.jpg',
+          albumArt: imageUrl,
           title: "Family",
           year: '2024',
           date: '2024-08-30',
