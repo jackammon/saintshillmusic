@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col>
         <div class="effect">
-          COME BACK SOON FOR MORE INFO
+          COME BACK SOON FOR TICKET INFO
         </div>
       </v-col>
     </v-row>
