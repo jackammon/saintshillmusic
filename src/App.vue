@@ -6,13 +6,13 @@
       class="nav"
       style="padding-right: 15px;"
     >
-      <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">
+      <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: #ffffff !important'">
         <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
         <img v-if="drawer" src="./assets/logo-white.png" alt="Saints' Hill Music" class="header-img"/> 
       </div>
       <v-spacer style="width: 80%"></v-spacer>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'">
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#ffffff'">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
@@ -21,7 +21,7 @@
           :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
           variant="text"
           @click="drawer = !drawer" 
-          :color="!drawer ? 'black' : '#fffdf9'"
+          :color="!drawer ? 'black' : '#ffffff'"
           border
           style="margin-top: 3px;"
         >
@@ -71,7 +71,7 @@ function toHome() {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000;
-  background-color: #fffdf9 !important;
+  background-color: #ffffff !important;
 }
 
 .btn-size {
@@ -108,7 +108,7 @@ function toHome() {
   transform: translateX(-50%);
   z-index: 1000;
   padding: 24px 25px;
-  color: #fffdf9;
+  color: #ffffff;
   text-transform: uppercase;
   font-family: 'Rubik';
 }
