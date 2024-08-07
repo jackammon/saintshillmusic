@@ -7,7 +7,9 @@
 <script>
 import AlbumRow from '../components/AlbumRow.vue';
 import dayjs from 'dayjs';
-import imageUrl from '@/assets/family.jpeg'
+import imageUrl1 from '@/assets/family.jpeg'
+import imageUrl2 from '@/assets/live-from-newberg.jpeg'
+// import imageUrl3 from '@/assets/jacks-house.jpeg'
 
 export default {
   components: {
@@ -21,11 +23,11 @@ export default {
       albums: [
         {
           id: 1,
-          albumArt: imageUrl,
+          albumArt: imageUrl1,
           title: "Family",
-          year: '2024',
+          year: 'Releasing August, 30th',
           date: '2024-08-30',
-          recordingInfo: "Recorded at Greg's House / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          recordingInfo: "Recorded live at Greg's house / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
           credits: [
             "Vocals, Guitar / Jacob Vigil",
             "Vocals / Hannah Brown",
@@ -43,15 +45,52 @@ export default {
             apple: null,
           }
         },
-        // {
-        //   id: 2,
-        //   albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg',
-        //   title: "Family: Live From Newberg",
-        //   year: 2024,
-        //   date: '2024-10-06',
-        //   recordingInfo: "Recorded at Greg's House / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
-        //   credits: "Vocals, Guitar / Nathan Stephenson\nVocals, Guitar / Stevie Lujan\nVocals, Synth / Esther Moran\nGuitar / Cameron Crew\nBass / Rei Wasserman\nDrums / Blair Mottau",
-        //   location: "These songs were recorded live in Newberg, Oregon on August 31st, 2024."
+        {
+          id: 2,
+          albumArt: imageUrl2,
+          title: "Family: Live From Newberg",
+          year: 'Releasing October 6th, 2024',
+          date: '2024-08-30',
+          recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          credits: [
+            "Vocals, Guitar / Jacob Vigil",
+            "Vocals / Hannah Brown",
+            "Vocals / Molly Onyemaobim",
+            "Vocals / Lauren Fotenos",
+            "Vocals / Summer Lamb",
+            "Guitar / Nick Sullivan",
+            "Keys, Guitar / Jack Ammon",
+            "Keys, Guitar, Bass, Drums / Michael Rabb",
+            // "Drums / Florida Man",
+          ],
+          location: "These songs were written and recorded in Newberg, Oregon.",
+          urls: {
+            spotify: null,
+            apple: null,
+          }
+        },
+        //  {
+        //   id: 3,
+        //   albumArt: imageUrl3,
+        //   title: "Family: Live From Jack's House",
+        //   year: '2024',
+        //   date: '2024-08-30',
+        //   recordingInfo: "Recorded live at Jack's house / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+        //   credits: [
+        //     "Vocals, Guitar / Jacob Vigil",
+        //     "Vocals / Hannah Brown",
+        //     "Vocals / Molly Onyemaobim",
+        //     "Vocals, Piano / Lauren Fotenos",
+        //     "Vocals / Summer Lamb",
+        //     "Piano / Mary Grace Curran",
+        //     "Piano, Guitar / Jack Ammon",
+        //     // "Drums / Florida Man",
+        //   ],
+        //   location: "These songs were written and recorded in Newberg, Oregon.",
+        //   urls: {
+        //     spotify: null,
+        //     apple: null,
+        //   }
         // },
       ]
     };
