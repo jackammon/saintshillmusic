@@ -2,7 +2,7 @@
   <a :href="url" class="link-item" target="_blank" rel="noopener noreferrer">
     <div class="link-content">
       <span class="title">{{ title }}</span>
-      <img v-if="albumArt" :src="albumArt" alt="Album Art" class="album-art" />
+      <img v-if="albumArt" :src="albumArt" alt="Album Art" class="album-art minimal-shadow" />
     </div>
   </a>
 </template>
@@ -63,5 +63,8 @@ export default {
 
 .title {
   text-transform: uppercase;
+}
+.minimal-shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 </style>

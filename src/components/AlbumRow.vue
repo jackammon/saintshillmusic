@@ -1,7 +1,7 @@
 <template>
   <v-row class="album-row">
     <v-col :cols="mdAndUp ? 5 : 12" class="gap-right"> 
-      <img v-if="album.albumArt" :src="album.albumArt" alt="Album Art" />
+      <img v-if="album.albumArt" :src="album.albumArt" alt="Album Art" class="minimal-shadow" />
     </v-col>
     <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
       <div class="content">
@@ -111,6 +111,11 @@ h2 {
 .buttons v-btn {
   margin-right: 1rem;
 }
+
+.minimal-shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 
 @media (min-width: 960px) {
   .gap-right {
