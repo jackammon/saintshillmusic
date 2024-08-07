@@ -30,7 +30,8 @@
 
 <script>
 import LinkItem from '../components/LinkItem.vue';
-import imageURL from '@/assets/family.jpeg';
+import single1URL from '@/assets/god-is-good.jpeg';
+import single2URL from '@/assets/come-what-may.jpeg';
 
 export default {
   name: 'LinktreeLandingPage',
@@ -42,7 +43,7 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  albumArt: imageURL },
+        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  albumArt: single1URL },
         // { title: 'Pre-save Single "A Holy Communion"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
         // { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
         // { title: 'Pre-save Debut Album "Family"', url: 'https://www.spotify.com', albumArt: 'https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg' },
