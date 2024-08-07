@@ -30,7 +30,7 @@
 
 <script>
 import LinkItem from '../components/LinkItem.vue';
-import imageURL from '@/assets/family.webp';
+import imageURL from '@/assets/family.jpeg';
 
 export default {
   name: 'LinktreeLandingPage',
