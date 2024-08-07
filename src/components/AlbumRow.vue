@@ -134,5 +134,9 @@ h2 {
     text-align: center;
     margin-top: 15px;
   }
+
+  .album-row {
+  margin-bottom: 30px;
+}
 }
 </style>
