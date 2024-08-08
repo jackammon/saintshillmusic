@@ -2,7 +2,7 @@
     <div class="nav-drawer" ref="drawer">
       <v-list style="background-color: #000000; color: #fffdf9; margin-top: 84px;">
           <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
-            <v-list-item-title :color="isOpen ? '#000000' : '#fffdf9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
+            <v-list-item-title :color="isOpen ? '#000000' : '#e9e9e9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
           </v-list-item>
       </v-list>
     </div>
@@ -73,7 +73,7 @@ ul {
   margin: 0;
 }
 li a {
-  color: #fffdf9;
+  color: #e9e9e9;
   text-decoration: none;
 }
 .tab {
