@@ -12,11 +12,11 @@
       </div>
       <v-spacer style="width: 80%"></v-spacer>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#e9e9e9'">
+      <v-btn icon size="x-large" variant="plain" @click="drawer = !drawer" :color="!drawer ? 'black' : '#e9e9e9'">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
-      <v-btn
+      <!-- <v-btn
           class="btn-size hidden-sm-and-down"
           :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
           variant="text"
@@ -26,7 +26,7 @@
           style="margin-top: 3px;"
         >
         MENU
-        </v-btn>
+        </v-btn> -->
     </v-app-bar>
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
