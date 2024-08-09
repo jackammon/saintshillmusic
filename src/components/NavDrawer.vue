@@ -1,8 +1,8 @@
 <template>
     <div class="nav-drawer" ref="drawer">
-      <v-list style="background-color: #000000; color: #fffdf9; margin-top: 84px;">
+      <v-list style="background-color: #0054ff; color: #fffdf9; margin-top: 84px;">
           <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
-            <v-list-item-title :color="isOpen ? '#000000' : '#e9e9e9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
+            <v-list-item-title :color="isOpen ? '#0054ff' : '#e9e9e9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
           </v-list-item>
       </v-list>
     </div>
@@ -21,10 +21,11 @@ const props = defineProps({
 });
 
 const menuItems = [
-  { title: 'Live Recording', link: '/events' },
+  { title: 'Home', link: '/' },
   { title: 'Music', link: '/music' },
   { title: 'Merch', link: '/merch' },
   { title: 'Updates', link: '/links' },
+  { title: 'Live Recording', link: '/events' },
   // { title: 'About', link: '/about' },
 ];
 
@@ -59,7 +60,7 @@ watch(() => props.isOpen, (newValue) => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #0054ff;
   z-index: 999;
   display: flex;
   flex-direction: column;

@@ -23,6 +23,7 @@
         :subtitle="link.subtitle"
         :url="link.url"
         :album-art="link.albumArt"
+        :color="link.color"
       />
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
@@ -34,7 +35,7 @@ import LinkItem from '../components/LinkItem.vue';
 import single1URL from '@/assets/god-is-good.webp';
 import single2URL from '@/assets/come-what-may.webp';
 import Link2URL from '@/assets/live-from-newberg.webp';
-import Link3URL from '@/assets/lp_b.webp';
+import Link3URL from '@/assets/LP_B.webp';
 
 
 export default {

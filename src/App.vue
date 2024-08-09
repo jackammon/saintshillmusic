@@ -6,67 +6,70 @@
       class="nav"
       style="padding-right: 15px;"
     >
-      <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: ##aeae3 !important'">
-        <img v-if="!drawer" src="./assets/logo_black.png" alt="Saints' Hill Music" class="header-img"/> 
-        <img v-if="drawer" src="./assets/logo_white.png" alt="Saints' Hill Music" class="header-img"/> 
-      </div>
-      <v-spacer style="width: 80%"></v-spacer>
+      <v-spacer style="width: 85%"></v-spacer>
 
-      <v-btn icon size="x-large" variant="plain" @click="drawer = !drawer" :color="!drawer ? 'black' : '#e9e9e9'">
+      <v-btn icon size="x-large" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
-      <!-- <v-btn
-          class="btn-size hidden-sm-and-down"
-          :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
-          variant="text"
-          @click="drawer = !drawer" 
-          :color="!drawer ? 'black' : '#e9e9e9'"
-          border
-          style="margin-top: 3px;"
-        >
+      <v-btn
+        class="btn-size hidden-sm-and-down"
+        :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
+        variant="text"
+        @click="drawer = !drawer"
+        :color="buttonColor"
+        border
+        style="margin-top: 3px;"
+      >
         MENU
-        </v-btn> -->
+      </v-btn>
     </v-app-bar>
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
 
     <!-- floating nav footer -->
     <div v-if="drawer" class="floating-footer">
-      Saints' Hill Music 
+      Saints' Hill Music
     </div>
 
     <v-main class="pa-0 fill-height">
       <v-container class="fill-height app-padding" fluid style="padding-top: 56px;">
         <v-row align="center" justify="center">
           <v-col class="text-center">
-            <router-view/>  
+            <router-view/>
           </v-col>
         </v-row>
       </v-container>
     </v-main>
-
   </v-app>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import NavDrawer from './components/NavDrawer.vue';
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 
 const drawer = ref(false);
 const router = useRouter();
+const route = useRoute();
+
+const buttonColor = computed(() => {
+  // Check if the current route is the home page
+  const isHomePage = route.path === '/';
+  return isHomePage ? 'white' : (drawer.value ? '#e9e9e9' : 'black');
+});
 
 function toHome() {
-  drawer.value = false
+  drawer.value = false;
   router.push('/');
 }
 
 </script>
 
+
 <style lang="scss">
 #app {
-  font-family: 'Rubik', serif;
+  font-family: 'Hanken Grotesk', 'serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -28,6 +28,10 @@ export default defineConfig({
           name: 'Rubik Mono One',
           styles: 'wght@400',
         },
+        {
+          name: 'Hanken+Grotesk',
+          styles: 'wght@400;500;700;900',
+        },
       ],
       },
     }),

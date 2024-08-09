@@ -1,5 +1,9 @@
 <template>
-  <a :href="url" class="link-item" target="_blank" rel="noopener noreferrer">
+  <a :href="url" 
+     class="link-item" 
+     :style="{ backgroundColor: color || '' }" 
+     target="_blank" 
+     rel="noopener noreferrer">
     <div class="link-content">
       <span class="title">{{ title }}</span>
       <img v-if="albumArt" :src="albumArt" alt="Album Art" class="album-art minimal-shadow" />
@@ -28,6 +32,10 @@ export default {
       type: String,
       default: null,
     },
+    color: {
+      type: String,
+      required: false,
+    }
   },
 };
 </script>

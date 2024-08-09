@@ -8,13 +8,15 @@
     </v-row>
     <v-row style="margin-bottom: 60px;">
       <v-col  style="text-align: left;">
-        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer">Get Tickets</v-btn>
+        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" style="font-family: 'Hanken Grotesk' !important;">Get Tickets</v-btn>
       </v-col>
     </v-row>
     <v-row>
       <v-col  style="text-align: left;">
+        <body>
         Join us on Saturday, August 31st in the Chehalem Cultural Center Ballroom for the live recording of Saints’ Hill Music’s debut worship album.
         Doors open at 6:30pm and the recording will begin at 7pm.
+        </body>
       </v-col>
     </v-row>
   </v-container>
@@ -31,13 +33,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #262626;
+  font-family: 'Hanken Grotesk' !important;
 }
 
 h1 {
     font-size: 5.5vw !important;
     line-height: 90%;
     margin-bottom: 1vw;
+    font-family: 'Hanken Grotesk' !important;
   }
 
 h2 {
@@ -46,13 +49,14 @@ h2 {
   line-height: 110%;
   font-weight: 500;
   margin-bottom: 2vw;
+  font-family: 'Hanken Grotesk' !important;
 }
 .contact {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Rubik' !important;
+  font-family: 'Hanken Grotesk' !important;
   text-transform: uppercase;
   color: black;
   letter-spacing: -.02em !important;
