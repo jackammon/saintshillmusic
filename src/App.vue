@@ -12,7 +12,7 @@
       </v-btn>
 
       <v-btn
-        class="btn-size hidden-sm-and-down"
+        class="btn-size menu-padding hidden-sm-and-down"
         :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
         variant="text"
         @click="drawer = !drawer"
@@ -89,15 +89,6 @@ function toHome() {
   letter-spacing: -2.755pt !important;
 }
 
-.logo {
-  text-align: left;
-  justify-content: start !important;
-  position: absolute;
-  padding-left: 21px !important;
-  padding-top: 5px;
-  cursor: pointer;
-}
-
 .app-padding {
   padding-left: 25px !important;
   padding-right: 25px !important;
@@ -117,6 +108,10 @@ function toHome() {
 
 .header-img {
   width: 60px;
+}
+
+.menu-padding {
+  margin-right: 15px !important;
 }
 
 @media (max-width: 960px) {

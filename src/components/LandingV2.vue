@@ -17,54 +17,54 @@
   </v-container>
 </template>
 
-<script>
-import { ref, onMounted } from 'vue';
-import gsap from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
-import dayjs from 'dayjs';
+<script> 
+// import { ref, onMounted } from 'vue';
+// import gsap from 'gsap';
+// import { TextPlugin } from 'gsap/TextPlugin';
+// import dayjs from 'dayjs';
 
-export default {
-  setup() {
-    const textElement = ref(null);
-    const texts = [
-      { text: "Debut Album \"Family\" Out August 30th", liveDate: null, expirationDate: '2024-08-31' },
-      { text: "Debut Album \"Family\" Out Now ", liveDate: '2024-08-31', expirationDate: null },
-      { text: "Live Recording August 31st", liveDate: null, expirationDate: '2024-08-31' },
-      { text: "See you there :)", liveDate: null, expirationDate: '2024-08-31' },
-      { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2024-08-31', expirationDate: '2024-10-06' },
-      { text: "\"Family: Live From Newberg\" Out Now", liveDate: '2024-10-06', expirationDate: null },
-      { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
-    ];
-    let currentText = 0;
+// export default {
+  // setup() {
+    // const textElement = ref(null);
+    // const texts = [
+    //   { text: "Debut Album \"Family\" Out August 30th", liveDate: null, expirationDate: '2024-08-31' },
+    //   { text: "Debut Album \"Family\" Out Now ", liveDate: '2024-08-31', expirationDate: null },
+    //   { text: "Live Recording August 31st", liveDate: null, expirationDate: '2024-08-31' },
+    //   { text: "See you there :)", liveDate: null, expirationDate: '2024-08-31' },
+    //   { text: "\"Family: Live From Newberg\" Out October 6th", liveDate: '2024-08-31', expirationDate: '2024-10-06' },
+    //   { text: "\"Family: Live From Newberg\" Out Now", liveDate: '2024-10-06', expirationDate: null },
+    //   { text: "Saints' Hill Music", liveDate: null, expirationDate: null },
+    // ];
+    // let currentText = 0;
 
-    function isTextValid(textObj) {
-      const now = dayjs();
-      const liveDate = textObj.liveDate ? dayjs(textObj.liveDate) : null;
-      const expirationDate = textObj.expirationDate ? dayjs(textObj.expirationDate) : null;
-      return (!liveDate || now.isAfter(liveDate)) && (!expirationDate || now.isBefore(expirationDate));
-    }
+    // function isTextValid(textObj) {
+    //   const now = dayjs();
+    //   const liveDate = textObj.liveDate ? dayjs(textObj.liveDate) : null;
+    //   const expirationDate = textObj.expirationDate ? dayjs(textObj.expirationDate) : null;
+    //   return (!liveDate || now.isAfter(liveDate)) && (!expirationDate || now.isBefore(expirationDate));
+    // }
 
-    function getFilteredTexts() {
-      return texts.filter(isTextValid);
-    }
+    // function getFilteredTexts() {
+    //   return texts.filter(isTextValid);
+    // }
 
-    function animateText(filteredTexts) {
-      // Animation logic here...
-    }
+    // function animateText(filteredTexts) {
+    //   // Animation logic here...
+    // }
 
-    onMounted(() => {
-      gsap.registerPlugin(TextPlugin);
-      const filteredTexts = getFilteredTexts();
-      if (filteredTexts.length > 0) {
-        animateText(filteredTexts); // Start the animation loop with filtered texts
-      }
-    });
+    // onMounted(() => {
+    //   gsap.registerPlugin(TextPlugin);
+    //   const filteredTexts = getFilteredTexts();
+    //   if (filteredTexts.length > 0) {
+    //     animateText(filteredTexts); // Start the animation loop with filtered texts
+    //   }
+    // });
 
-    return {
-      textElement
-    };
-  },
-}
+    // return {
+    //   textElement
+    // };
+  // },
+// }
 </script>
 
 <style scoped>

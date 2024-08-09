@@ -51,17 +51,6 @@ h2 {
   margin-bottom: 2vw;
   font-family: 'Hanken Grotesk' !important;
 }
-.contact {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Hanken Grotesk' !important;
-  text-transform: uppercase;
-  color: black;
-  letter-spacing: -.02em !important;
-  text-align: left;
-}
 
 /* Responsive adjustments for tablets */
 @media (max-width: 960px) {
@@ -72,23 +61,6 @@ h2 {
   h2 {
     font-size: 2.5vw !important;
     margin-bottom: 4vw !important;
-  }
-}
-
-/* Responsive adjustments for mobile phones */
-@media (max-width: 480px) {
-  .contact {
-    top: 47%; /* adjust position slightly for better viewing */
-    left: 50%;
-    transform: translate(-50%, -40%);
-  }
-}
-
-@media (max-width: 315px) {
-  .contact {
-    top: 45%; /* adjust position slightly for better viewing */
-    left: 50%;
-    transform: translate(-50%, -40%);
   }
 }
 
