@@ -7,7 +7,7 @@
 <script>
 import AlbumRow from '../components/AlbumRow.vue';
 import dayjs from 'dayjs';
-import imageUrl1 from '@/assets/family.jpeg'
+import imageUrl1 from '@/assets/family.webp'
 import imageUrl2 from '@/assets/live-from-newberg.jpeg'
 // import imageUrl3 from '@/assets/jacks-house.jpeg'
 
@@ -27,7 +27,7 @@ export default {
           title: "Family",
           year: 'Releasing August, 30th',
           date: '2024-08-30',
-          recordingInfo: "Recorded live at Greg's house / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          recordingInfo: "Recorded recorded at The Woodshed (Woodman’s house) Newberg, Oregon / Produced by Michael Rabb and Greg Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           credits: [
             "Vocals, Guitar / Jacob Vigil",
             "Vocals / Hannah Brown",

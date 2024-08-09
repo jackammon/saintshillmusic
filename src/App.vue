@@ -114,8 +114,7 @@ function toHome() {
 }
 
 .header-img {
-  width: 48px;
-  height: 48px;
+  width: 60px;
 }
 
 @media (max-width: 960px) {
