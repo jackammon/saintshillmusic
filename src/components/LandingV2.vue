@@ -1,9 +1,11 @@
 <template>
   <v-container>
     <div class="video-background">
-      <video autoplay muted loop>
+      <video autoplay muted loop playsinline>
         <source src="@/assets/landing.mp4" type="video/mp4">
       </video>
+      <!-- Overlay to prevent interaction -->
+      <div class="video-overlay"></div>
     </div>
     <v-row class="text-center">
       <div class="title">
@@ -47,16 +49,7 @@ export default {
     }
 
     function animateText(filteredTexts) {
-      // if (currentText >= filteredTexts.length) currentText = 0; // Loop back to the first text
-      // gsap.to(textElement.value, {
-      //   duration: 3,
-      //   text: filteredTexts[currentText].text,
-      //   onComplete: () => {
-      //     // Wait some time before starting the next animation
-      //     gsap.to(textElement.value, { delay: 2.5, onComplete: () => animateText(filteredTexts) });
-      //   }
-      // });
-      // currentText++;
+      // Animation logic here...
     }
 
     onMounted(() => {
@@ -75,7 +68,6 @@ export default {
 </script>
 
 <style scoped>
-
 .landing-img {
   width: 80%;
 }
@@ -106,6 +98,18 @@ body, html {
   height: auto;
   transform: translate(-50%, -50%);
   object-fit: cover; /* Ensures the video covers the entire background */
+  pointer-events: none; /* Prevent video from being clickable */
+}
+
+/* Overlay to prevent interaction */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place above the video */
+  pointer-events: none; /* Ensure the overlay itself isn't clickable */
 }
 
 .title {

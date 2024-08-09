@@ -4,9 +4,8 @@
       flat
       color="rgba(0, 0, 0, 0.0)"
       class="nav"
-      style="padding-right: 15px;"
     >
-      <v-spacer style="width: 85%"></v-spacer>
+      <v-spacer style="width: 100%"></v-spacer>
 
       <v-btn icon size="x-large" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
