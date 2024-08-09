@@ -1,10 +1,20 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col>
-        <div class="effect">
-          COME BACK SOON FOR TICKET INFO
-        </div>
+    <v-row>
+      <v-col style="text-align: left;">
+        <h1>Family Live Album Recording</h1>
+        <h2 style="margin-bottom: 30px;">August 31st @ Chehalem Cultural Center</h2>
+      </v-col>
+    </v-row>
+    <v-row style="margin-bottom: 60px;">
+      <v-col  style="text-align: left;">
+        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer">Get Tickets</v-btn>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col  style="text-align: left;">
+        Join us on Saturday, August 31st in the Chehalem Cultural Center Ballroom for the live recording of Saints’ Hill Music’s debut worship album.
+        Doors open at 6:30pm and the recording will begin at 7pm.
       </v-col>
     </v-row>
   </v-container>
@@ -25,7 +35,7 @@ body {
 }
 
 h1 {
-    font-size: 5vw !important;
+    font-size: 5.5vw !important;
     line-height: 90%;
     margin-bottom: 1vw;
   }

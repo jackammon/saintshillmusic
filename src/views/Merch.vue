@@ -1,16 +1,16 @@
 <template>
-  <v-container class="content-offset">
+  <v-container>
     <v-row>
       <v-col cols="12">
-        <img src="../assets/lp_b.webp" alt="Merch 1" class="merch-image" id="merch-1"/>
+        <img src="../assets/lp_b.webp" alt="Merch 1" class="merch-image offset-1" id="merch-1"/>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
-        <img src="../assets/lp_c.webp" alt="Merch 2" class="merch-image overlap-image" id="merch-2"/>
+        <img src="../assets/lp_c.webp" alt="Merch 2" class="merch-image offset-2" id="merch-2"/>
       </v-col>
       <v-col cols="12">
-        <!-- <img src="../assets/merch3.webp" alt="Merch 3" class="merch-image"/> -->
+          <img src="../assets/lp_a.webp" alt="Merch 3" class="merch-image offset-3" />
       </v-col>
     </v-row>
   </v-container>
@@ -20,10 +20,6 @@
 a {
   color: black;
   text-decoration: none;
-}
-
-.content-offset {
-  margin-top: -200px;
 }
 
 .merch {
@@ -37,44 +33,60 @@ a {
   margin-bottom: 1rem;
 }
 
-.overlap-image {
-  margin-top: -450px; 
-  z-index: 10;
-   
+.offset-1 {
+    margin-left: 0px; 
+  }
+.offset-2 {
+  margin-left: -150px;
+}
+  .offset-3 {
+  margin-left: -50px;
 }
 
+
 @media (max-width: 1300px) {
- .overlap-image {
-    margin-top: -350px; 
-    z-index: 10; 
+  .offset-1 {
+    margin-left: 0px; 
   }
-  .content-offset {
-    margin-top: -100px;
+  .offset-2 {
+    margin-left: -150px;
+  }
+    .offset-3 {
+    margin-left: -60px;
   }
 }
 
 @media (max-width: 1100px) {
- .overlap-image {
-    margin-top: -350px; 
-    z-index: 10; 
+  .offset-1 {
+    margin-left: 0px; 
   }
-  .content-offset {
-    margin-top: -100px;
+  .offset-2 {
+    margin-left: -150px;
+  }
+  .offset-3 {
+    margin-left: -70px;
   }
 }
  @media (max-width: 900px) {
- .overlap-image {
-    margin-top: -300px; 
-    z-index: 10; 
+   .offset-1 {
+    margin-left: 0px; 
+  }
+  .offset-2 {
+    margin-left: -150px;
+  }
+  .offset-3 {
+    margin-left: -80px;
   }
 }
  @media (max-width: 700px) {
- .overlap-image {
-    margin-top: -150px; 
-    z-index: 10; 
+  .offset-1 {
+    margin-left: 0px; 
   }
-    .content-offset {
-    margin-top: -50px;
+  .offset-2 {
+    margin-left: -150px;
+  }
+  .offset-3 {
+    margin-left: -100px;
   }
 }
 </style>

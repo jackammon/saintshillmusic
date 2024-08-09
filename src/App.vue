@@ -7,8 +7,8 @@
       style="padding-right: 15px;"
     >
       <div class="jck-size logo" @click="toHome" :style="!drawer ? 'color: black' : 'color: ##aeae3 !important'">
-        <img v-if="!drawer" src="./assets/logo-black.png" alt="Saints' Hill Music" class="header-img"/> 
-        <img v-if="drawer" src="./assets/logo-white.png" alt="Saints' Hill Music" class="header-img"/> 
+        <img v-if="!drawer" src="./assets/logo_black.png" alt="Saints' Hill Music" class="header-img"/> 
+        <img v-if="drawer" src="./assets/logo_white.png" alt="Saints' Hill Music" class="header-img"/> 
       </div>
       <v-spacer style="width: 80%"></v-spacer>
 

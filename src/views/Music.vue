@@ -27,7 +27,7 @@ export default {
           title: "Family",
           year: 'Releasing August, 30th',
           date: '2024-08-30',
-          recordingInfo: "Recorded recorded at The Woodshed (Woodman’s house) Newberg, Oregon / Produced by Michael Rabb and Greg Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+          recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Greg Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           credits: [
             "Vocals, Guitar / Jacob Vigil",
             "Vocals / Hannah Brown",
