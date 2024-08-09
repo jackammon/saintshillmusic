@@ -8,7 +8,7 @@
 import AlbumRow from '../components/AlbumRow.vue';
 import dayjs from 'dayjs';
 import imageUrl1 from '@/assets/family.webp'
-import imageUrl2 from '@/assets/live-from-newberg.jpeg'
+import imageUrl2 from '@/assets/live-from-newberg.webp'
 // import imageUrl3 from '@/assets/jacks-house.jpeg'
 
 export default {

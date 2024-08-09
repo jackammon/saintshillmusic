@@ -33,7 +33,7 @@
 import LinkItem from '../components/LinkItem.vue';
 import single1URL from '@/assets/god-is-good.webp';
 import single2URL from '@/assets/come-what-may.webp';
-import Link2URL from '@/assets/live-from-newberg.jpeg';
+import Link2URL from '@/assets/live-from-newberg.webp';
 import Link3URL from '@/assets/lp_b.webp';
 
 
