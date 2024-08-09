@@ -2,12 +2,12 @@
   <v-container>
     <v-row>
       <v-col cols="12">
-        <img src="../assets/lp_b.webp" alt="Merch 1" class="merch-image offset-1" id="merch-1"/>
+        <img src="../assets/lp_front.webp" alt="Merch 1" class="merch-image offset-1" id="merch-1"/>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
-        <img src="../assets/lp_c.webp" alt="Merch 2" class="merch-image offset-2" id="merch-2"/>
+        <img src="../assets/lp_back.webp" alt="Merch 2" class="merch-image offset-2" id="merch-2"/>
       </v-col>
       <v-col cols="12">
           <img src="../assets/merch.webp" alt="Merch 3" class="merch-image offset-3" />
