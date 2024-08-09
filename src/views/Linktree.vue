@@ -34,7 +34,8 @@ import LinkItem from '../components/LinkItem.vue';
 import single1URL from '@/assets/god-is-good.jpeg';
 import single2URL from '@/assets/come-what-may.jpeg';
 import Link2URL from '@/assets/live-from-newberg.jpeg';
-import Link3URL from '@/assets/family.jpeg';
+import Link3URL from '@/assets/lp_b.webp';
+
 
 export default {
   name: 'LinktreeLandingPage',
@@ -46,13 +47,13 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com' },
+        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://saintshillmusic.com/events' },
         { title: 'Pre-save Single "God is Good"', subtitle: "Releasing August, 11th", url: 'https://www.spotify.com',  albumArt: single1URL },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
         // { title: 'Pre-save Debut Album "Family"', subtitle: "Releasing August, 30th", url: 'https://www.spotify.com', albumArt: Link3URL },
-        // { title: 'Pre-Order "Family" On Vinyl', url: 'https://www.spotify.com', albumArt: 'https://store.bethelmusic.com/cdn/shop/products/More_Vinyl.png?v=1606244124&width=1445' },
+        { title: 'Pre-Order "Family" On Vinyl', url: 'https://saintshillmusic.com/merch', albumArt: Link3URL },
       ],
     };
   },
