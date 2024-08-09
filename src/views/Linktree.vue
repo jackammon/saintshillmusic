@@ -47,7 +47,7 @@ export default {
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
         { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com' },
-        { title: 'Pre-save Single "God is Good"', subtitle: "Releasing August, 18th", url: 'https://www.spotify.com',  albumArt: single1URL },
+        { title: 'Pre-save Single "God is Good"', subtitle: "Releasing August, 11th", url: 'https://www.spotify.com',  albumArt: single1URL },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
