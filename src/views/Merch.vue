@@ -125,7 +125,6 @@ h2 {
   }
   .header {
     margin-bottom: -80px; 
-    margin-top: -20px;
   }
 }
 
