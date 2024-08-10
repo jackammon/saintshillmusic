@@ -2,19 +2,41 @@
   <v-container>
     <v-row>
       <v-col cols="12" class="image-container">
-        <img src="../assets/lp_front.webp" alt="Merch 1" class="merch-image offset-1" id="merch-1"/>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" class="image-container">
-        <img src="../assets/lp_back.webp" alt="Merch 2" class="merch-image offset-2" id="merch-2"/>
-      </v-col>
-      <v-col cols="12" class="image-container">
-          <img src="../assets/merch.webp" alt="Merch 3" class="merch-image offset-3" />
+        <v-carousel
+          cycle
+          hide-delimiters
+          show-arrows="hover"
+          interval="5000"
+        >
+          <v-carousel-item
+            v-for="(image, index) in images"
+            :key="index"
+            :src="image.src"
+            :alt="image.alt"
+          ></v-carousel-item>
+        </v-carousel>
       </v-col>
     </v-row>
   </v-container>
 </template>
+<script>
+import Link1URL from "@/assets/lp_front.webp";
+import Link2URL from "@/assets/lp_back.webp";
+import Link3URL from "@/assets/merch.webp";
+
+export default {
+  data() {
+    return {
+      images: [
+        { src: Link1URL, alt: "Merch 1" },
+        { src: Link2URL, alt: "Merch 2" },
+        { src: Link3URL, alt: "Merch 3" },
+      ],
+      currentIndex: 0,
+    };
+  },
+};
+</script>
 
 <style scoped>
 a {
@@ -23,7 +45,7 @@ a {
 }
 
 .merch {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -34,61 +56,39 @@ a {
   display: block;
 }
 
+.is-active {
+  display: block; /* Show only the active image */
+}
+
 .image-container {
   display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center;    /* Vertical centering */
-  overflow: visible;      /* Ensure any overflow is shown */
-  height: 100%;           /* Ensure the container takes full height */
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
 }
+
 .offset-1 {
-    margin-left: 0px; 
-  }
-/* .offset-2 {
-  margin-left: -150px;
-} */
-  .offset-3 {
-  margin-left: -50px;
+  margin-left: 0px;
+}
+
+.offset-3 {
+  margin-left: 0px;
 }
 
 
-/* @media (max-width: 1300px) {
-  .offset-1 {
-    margin-left: 0px; 
+@media (max-width: 700px) {
+  /* Show only one image at a time on mobile */
+  .image-container {
+    margin-bottom: 100px;
   }
-  .offset-2 {
-    margin-left: -150px;
+  .merch-image {
+    max-width: 100vw;
   }
-    .offset-3 {
-    margin-left: -60px;
-  }
-}
 
-@media (max-width: 1100px) {
   .offset-1 {
-    margin-left: 0px; 
-  }
-  .offset-2 {
-    margin-left: -150px;
-  }
-  .offset-3 {
-    margin-left: -70px;
-  }
-}
- @media (max-width: 900px) {
-   .offset-1 {
-    margin-left: 0px; 
-  }
-  .offset-2 {
-    margin-left: -150px;
-  }
-  .offset-3 {
-    margin-left: -80px;
-  }
-}  */
- @media (max-width: 700px) {
-  .offset-1 {
-    margin-left: -30px; 
+    margin-left: -30px;
   }
   .offset-2 {
     margin-left: -100px;
@@ -96,5 +96,5 @@ a {
   .offset-3 {
     margin-left: -50px;
   }
-} 
+}
 </style>
