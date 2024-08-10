@@ -1,7 +1,7 @@
 <template>
   <v-btn :href="url" 
      class="link-item" 
-     target="_blank" 
+     :target="openInNewTab ? '_blank' : '_self'" 
      color="white"
      size="x-large"
      rel="noopener noreferrer">
@@ -36,9 +36,13 @@ export default {
     color: {
       type: String,
       required: false,
-    }
+    },
+    openInNewTab: {
+      type: Boolean,
+      default: true,
+    },
   },
-};
+}
 </script>
 
 <style scoped>
