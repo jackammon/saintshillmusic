@@ -43,19 +43,11 @@ export default {
 
 <style scoped>
 .link-item {
-  /* padding: 15px; */
-  /* text-align: center; */
-  /* border: 1px solid #e0e0e0; */
   font-size: 15px !important;
   color: #333333;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 25px;
-}
-
-.link-item:hover {
-  /* background-color: #003299 !important; Lighter blue for the hover background */
-  /* color: #ffffff; White text color on hover */
 }
 
 .link-content {
