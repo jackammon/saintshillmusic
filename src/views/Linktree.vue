@@ -65,7 +65,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   min-height: 90vh;
 }
 
