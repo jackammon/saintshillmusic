@@ -1,5 +1,5 @@
 <template>
-  <v-container style="min-height: 100vh; padding-top: 20px; max-width: 1200px;">
+  <v-container style="min-height: 90vh; padding-top: 20px; max-width: 1200px;">
     <v-row style="margin-bottom: -20px;">
       <v-col style="text-align: left;">
         <h1 style="margin-bottom: 20px;">Family Live Album Recording</h1>
@@ -15,7 +15,7 @@
         </body>
       </v-col>
     </v-row>
-     <v-row style="margin-bottom: 20px;">
+     <v-row>
       <v-col style="text-align: left; margin-top: 60px;">
         <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" style="font-family: 'Hanken Grotesk' !important; width: 100%; max-width: 400px">Get Tickets</v-btn>
       </v-col>

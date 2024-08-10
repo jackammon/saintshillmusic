@@ -1,5 +1,5 @@
 <template>
-  <v-container style="min-height: 100vh; padding-top: 20px; max-width: 1200px;">
+  <v-container style="min-height: 90vh; padding-top: 20px; max-width: 1200px;">
     <v-row class="header">
       <v-col style="text-align: left;">
         <h1>Family 12" Vinyl</h1>
