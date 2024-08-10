@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import AlbumRow from '../components/AlbumRow.vue';
-import dayjs from 'dayjs';
+import AlbumRow from '../components/AlbumRow.vue'
+import dayjs from 'dayjs'
 import imageUrl1 from '@/assets/family.webp'
 import imageUrl2 from '@/assets/live-from-newberg.webp'
 // import imageUrl3 from '@/assets/jacks-house.jpeg'
@@ -14,9 +14,6 @@ import imageUrl2 from '@/assets/live-from-newberg.webp'
 export default {
   components: {
     AlbumRow
-  },
-  mounted() {
-   
   },
   data() {
     return {
@@ -37,7 +34,6 @@ export default {
             "Guitar / Nick Sullivan",
             "Keys, Guitar / Jack Ammon",
             "Keys, Guitar, Bass, Drums / Michael Rabb",
-            // "Drums / Florida Man",
           ],
           location: "These songs were written and recorded in Newberg, Oregon.",
           urls: {
@@ -93,21 +89,7 @@ export default {
         //   }
         // },
       ]
-    };
-  },
-  methods: {
-     isRecordReleased(record) {
-      const now = dayjs();
-      const liveDate = record.date ? dayjs(record.liveDate) : null;
-      const expirationDate = record.expirationDate ? dayjs(record.expirationDate) : null;
-      return (!liveDate || now.isAfter(liveDate)) && (!expirationDate || now.isBefore(expirationDate));
     }
   }
-};
-</script>
-
-<style scoped>
-.v-container {
-  padding-top: 15px;
 }
-</style>
+</script>

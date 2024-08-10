@@ -54,4 +54,19 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    target: 'esnext', // Enables modern JavaScript features
+    minify: 'esbuild', // Use esbuild for faster minification
+    cssCodeSplit: true, // Splits CSS into separate files per chunk
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+        },
+      },
+    },
+    sourcemap: false, // Disable source maps in production for smaller build size
+  },
 })

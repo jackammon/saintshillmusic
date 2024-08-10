@@ -9,7 +9,7 @@
     </div>
     <v-row class="text-center">
       <div class="title">
-        <div class="title-word" ref="textElement">
+        <div ref="textElement">
         <img src="../assets/logo_white.png" alt="Saints' Hill Music" class="landing-img"/>
           </div>
       </div>

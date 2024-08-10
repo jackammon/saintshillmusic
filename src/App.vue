@@ -18,17 +18,6 @@
         <v-icon size="40">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
-      <!-- <v-btn
-        class="btn-size menu-padding hidden-sm-and-down"
-        :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
-        variant="text"
-        @click="drawer = !drawer"
-        :color="buttonColor"
-        border
-        size="x-large"
-        style="margin-top: 3px;"
-      >
-      </v-btn> -->
     </v-app-bar>
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
@@ -51,27 +40,27 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
-import NavDrawer from './components/NavDrawer.vue';
+import { ref, computed, onMounted } from 'vue'
+import NavDrawer from './components/NavDrawer.vue'
 import { useRouter, useRoute } from 'vue-router'
 
-const drawer = ref(false);
-const router = useRouter();
-const route = useRoute();
+const drawer = ref(false)
+const router = useRouter()
+const route = useRoute()
 
 const buttonColor = computed(() => {
   // Check if the current route is the home page
-  const isHomePage = route.path === '/';
-  return isHomePage ? 'white' : (drawer.value ? '#e9e9e9' : 'black');
-});
+  const isHomePage = route.path === '/'
+  return isHomePage ? 'white' : (drawer.value ? '#e9e9e9' : 'black')
+})
 
 const isHome = computed(() => {
-   return route.path === '/';
-});
+   return route.path === '/'
+})
 
 function toHome() {
-  drawer.value = false;
-  router.push('/');
+  drawer.value = false
+  router.push('/')
 }
 
 </script>
@@ -85,19 +74,6 @@ function toHome() {
   text-align: center;
   color: #000;
   background-color: #e9e9e9 !important;
-}
-
-.btn-size {
-  font-size: 12pt !important;
-  font-weight: 700 !important;
-  letter-spacing: -.02em !important;
-}
-
-.jck-size {
-  font-size: 20pt !important;
-  font-weight: 700 !important;
-  font-family: 'Rubik Mono One';
-  letter-spacing: -2.755pt !important;
 }
 
 .app-padding {
@@ -124,16 +100,4 @@ function toHome() {
 .menu-padding {
   margin-right: 15px !important;
 }
-
-@media (max-width: 960px) {
-  .btn-size {
-    font-size: 16pt !important;
-  }
-
-  .jck-size {
-    text-align: left !important;
-    justify-content: flex-start !important;
-  }
-}
-
 </style>

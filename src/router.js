@@ -3,7 +3,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home.vue'
 import Music from './views/Music.vue'
-import About from './views/About.vue'
 import Event from './views/Event.vue'
 import Merch from './views/Merch.vue'
 import Linktree from './views/Linktree.vue'
@@ -23,11 +22,6 @@ const routes = [
     path: '/merch',
     name: 'merch',
     component: Merch
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: About
   },
   {
     path: '/events',

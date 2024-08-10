@@ -93,12 +93,6 @@ h2 {
   font-family: monospace;
 }
 
-.release-status {
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: green;
-}
-
 .content {
   max-width: 1000px;
   text-align: left;

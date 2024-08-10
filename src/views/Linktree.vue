@@ -30,11 +30,11 @@
 </template>
 
 <script>
-import LinkItem from '../components/LinkItem.vue';
-import single1URL from '@/assets/god-is-good.webp';
-import single2URL from '@/assets/come-what-may.webp';
-import Link2URL from '@/assets/live-from-newberg.webp';
-import Link3URL from '@/assets/lp_front.webp';
+import LinkItem from '../components/LinkItem.vue'
+// import single1URL from '@/assets/god-is-good.webp'
+// import single2URL from '@/assets/come-what-may.webp'
+// import Link2URL from '@/assets/live-from-newberg.webp'
+// import Link3URL from '@/assets/lp_front.webp'
 
 
 export default {
@@ -55,9 +55,9 @@ export default {
         // { title: 'Pre-save Debut Album "Family"', subtitle: "Releasing August, 30th", url: 'https://www.spotify.com', albumArt: Link3URL },
         { title: 'Pre-Order "Family" On Vinyl', url: 'https://saintshillmusic.com/merch', color: '#0054ff' },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
@@ -73,11 +73,11 @@ export default {
   margin-bottom: 20px;
 }
 
-.profile-image {
+/* .profile-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-}
+} */
 
 .artist-name {
   font-size: 24px;
@@ -101,10 +101,6 @@ export default {
   flex-direction: column;
   width: 100%;
   max-width: 400px;
-}
-
-.link-item {
-  margin: 10px 0;
 }
 
 .empty {
