@@ -1,5 +1,11 @@
 <template>
   <v-container>
+    <v-row class="header">
+      <v-col style="text-align: left;">
+        <h1 style="margin-bottom: 20px;">Family 12" Vinyl</h1>
+        <h2>Pre-Order opens August 18th</h2>
+      </v-col>
+    </v-row>
     <v-row>
       <v-col cols="12" class="image-container">
         <v-carousel
@@ -44,6 +50,22 @@ a {
   text-decoration: none;
 }
 
+h1 {
+    font-size: 6vw !important;
+    line-height: 90%;
+    margin-bottom: 1vw;
+    font-family: 'Hanken Grotesk' !important;
+  }
+
+h2 {
+  font-style: normal;
+  font-size: 1.5vw;
+  line-height: 110%;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  font-family: 'Hanken Grotesk' !important;
+}
+
 .merch {
   /* max-width: 100%; */
   height: auto;
@@ -77,6 +99,11 @@ a {
   margin-left: 0px;
 }
 
+.header {
+  margin-bottom: -20px; 
+  margin-top: 20px;
+}
+
 
 @media (max-width: 700px) {
   /* Show only one image at a time on mobile */
@@ -96,5 +123,20 @@ a {
   .offset-3 {
     margin-left: -50px;
   }
+  .header {
+    margin-bottom: -80px; 
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 9vw !important;
+  }
+
+  h2 {
+    font-size: 3vw !important;
+  }
+
 }
 </style>
