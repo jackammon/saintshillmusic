@@ -17,7 +17,7 @@
     </v-row>
      <v-row>
       <v-col style="text-align: left; margin-top: 60px;">
-        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" style="font-family: 'Hanken Grotesk' !important; width: 100%; max-width: 400px">Get Tickets</v-btn>
+        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" class="button">Get Tickets</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -37,8 +37,8 @@ body {
 
 h1 {
   font-size: 6vw !important;
-  line-height: 90%;
-  margin-bottom: 1vw;
+  line-height: 100%;
+  margin-bottom: 1.333vw !important;
   font-family: 'Hanken Grotesk' !important;
 }
 
@@ -49,6 +49,11 @@ h2 {
   font-weight: 500;
   margin-bottom: 2vw;
   font-family: 'Hanken Grotesk' !important;
+}
+
+.button {
+  font-family: 'Hanken Grotesk' !important; 
+  width: 200px;
 }
 
 /* Responsive adjustments for tablets */
@@ -65,6 +70,9 @@ h2 {
 
   body {
     font-size: 3.5vw !important;
+  }
+  .button {
+    width: 100%;
   }
 }
 

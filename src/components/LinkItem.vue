@@ -70,6 +70,7 @@ export default {
   text-transform: uppercase;
   color: black;
   letter-spacing: 0em;
+  font-size: 16px;
 }
 
 .subtitle {

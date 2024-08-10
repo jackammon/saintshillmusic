@@ -80,7 +80,7 @@ export default {
 } */
 
 .artist-name {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -92,7 +92,7 @@ export default {
 
 .social-link {
   margin: 0 10px;
-  font-size: 24px;
+  font-size: 30px;
   color: #000;
 }
 
