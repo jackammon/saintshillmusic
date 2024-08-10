@@ -1,5 +1,5 @@
 <template>
-  <v-container style="min-height: 90vh; padding-top: 20px; max-width: 1200px;">
+  <v-container style="min-height: 90vh; padding-top: 20px; max-width: 1000px;">
     <v-row style="margin-bottom: -20px;">
       <v-col style="text-align: left;">
         <h1 style="margin-bottom: 20px;">Family Live Album Recording</h1>
@@ -30,24 +30,24 @@ a {
 }
 
 body {
-  margin-top: 1vw;
+  margin-top: 10px;
   font-family: 'Hanken Grotesk' !important;
-  font-size: 1.5vw !important;
+  font-size: 15px;
 }
 
 h1 {
-  font-size: 6vw !important;
+  font-size: 50px !important;
   line-height: 100%;
-  margin-bottom: 1.333vw !important;
+  margin-bottom: 14px !important;
   font-family: 'Hanken Grotesk' !important;
 }
 
 h2 {
   font-style: normal;
-  font-size: 2vw;
+  font-size: 20px;
   line-height: 110%;
   font-weight: 500;
-  margin-bottom: 2vw;
+  margin-bottom: 20px;
   font-family: 'Hanken Grotesk' !important;
 }
 
@@ -57,7 +57,7 @@ h2 {
 }
 
 /* Responsive adjustments for tablets */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   h1 {
     font-size: 9vw !important;
     margin-bottom: 4vw !important;
