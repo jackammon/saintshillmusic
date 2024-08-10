@@ -45,30 +45,30 @@ export default {
             apple: null,
           }
         },
-        {
-          id: 2,
-          albumArt: imageUrl2,
-          title: "Family: Live From Newberg",
-          year: 'Releasing October 6th, 2024',
-          date: '2024-08-30',
-          recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
-          credits: [
-            "Vocals, Guitar / Jacob Vigil",
-            "Vocals / Hannah Brown",
-            "Vocals / Molly Onyemaobim",
-            "Vocals / Lauren Fotenos",
-            "Vocals / Summer Lamb",
-            "Guitar / Nick Sullivan",
-            "Keys, Guitar / Jack Ammon",
-            "Keys, Guitar, Bass, Drums / Michael Rabb",
-            // "Drums / Florida Man",
-          ],
-          location: "These songs were written and recorded in Newberg, Oregon.",
-          urls: {
-            spotify: null,
-            apple: null,
-          }
-        },
+        // {
+        //   id: 2,
+        //   albumArt: imageUrl2,
+        //   title: "Family: Live From Newberg",
+        //   year: 'Releasing October 6th, 2024',
+        //   date: '2024-08-30',
+        //   recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+        //   credits: [
+        //     "Vocals, Guitar / Jacob Vigil",
+        //     "Vocals / Hannah Brown",
+        //     "Vocals / Molly Onyemaobim",
+        //     "Vocals / Lauren Fotenos",
+        //     "Vocals / Summer Lamb",
+        //     "Guitar / Nick Sullivan",
+        //     "Keys, Guitar / Jack Ammon",
+        //     "Keys, Guitar, Bass, Drums / Michael Rabb",
+        //     // "Drums / Florida Man",
+        //   ],
+        //   location: "These songs were written and recorded in Newberg, Oregon.",
+        //   urls: {
+        //     spotify: null,
+        //     apple: null,
+        //   }
+        // },
         //  {
         //   id: 3,
         //   albumArt: imageUrl3,
