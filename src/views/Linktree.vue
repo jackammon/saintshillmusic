@@ -112,7 +112,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Rubik' !important;
+  font-family: 'Hanken Grotesk' !important;
   text-transform: uppercase;
   color: black;
   letter-spacing: -.02em !important;
