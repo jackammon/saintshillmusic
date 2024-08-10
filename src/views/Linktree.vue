@@ -103,6 +103,10 @@ export default {
   max-width: 400px;
 }
 
+.link-item {
+  margin: 10px 0;
+}
+
 .empty {
   position: fixed;
   top: 50%;
