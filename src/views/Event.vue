@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col style="text-align: left;">
-        <h1>Family Live Album Recording</h1>
+        <h1 style="margin-bottom: 15px;">Family Live Album Recording</h1>
         <h2 style="margin-bottom: 30px;">August 31st @ Chehalem Cultural Center</h2>
       </v-col>
     </v-row>
@@ -12,8 +12,8 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col  style="text-align: left;">
-        <body>
+      <v-col>
+        <body style="text-align: left;">
         Join us on Saturday, August 31st in the Chehalem Cultural Center Ballroom for the live recording of Saints’ Hill Music’s debut worship album.
         Doors open at 6:30pm and the recording will begin at 7pm.
         </body>
@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-    font-size: 5.5vw !important;
+    font-size: 6vw !important;
     line-height: 90%;
     margin-bottom: 1vw;
     font-family: 'Hanken Grotesk' !important;
@@ -55,12 +55,16 @@ h2 {
 /* Responsive adjustments for tablets */
 @media (max-width: 960px) {
   h1 {
-    font-size: 7vw !important;
+    font-size: 9vw !important;
   }
 
   h2 {
     font-size: 2.5vw !important;
     margin-bottom: 4vw !important;
+  }
+
+  body {
+    font-size: 3vw !important;
   }
 }
 
