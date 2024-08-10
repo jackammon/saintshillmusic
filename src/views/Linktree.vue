@@ -47,7 +47,7 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.saintshill.church/live-album-recording', color: '#0054ff' },
+        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://saintshillmusic.com/events', color: '#0054ff' },
         // { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  color: '#0054ff' },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
