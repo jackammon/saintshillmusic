@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="min-height: 100vh; padding-top: 20px; max-width: 1200px;">
     <v-row class="header">
       <v-col style="text-align: left;">
         <h1>Family 12" Vinyl</h1>
@@ -68,8 +68,6 @@ h2 {
 
 .image-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: visible;
   height: 100%;
   width: 100%;

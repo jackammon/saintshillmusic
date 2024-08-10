@@ -10,11 +10,11 @@
       <v-btn v-if="isHome && !drawer" variant="plain" class="hidden-sm-and-down" :color="buttonColor" to='/links' >Links</v-btn> -->
       <v-spacer style="width: 100%"></v-spacer>
 
-      <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor">
+      <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor" style="margin-right: 11px; margin-top: 11px;">
         <v-icon size="35">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
-      <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-sm-and-down" @click="drawer = !drawer" :color="buttonColor" style="margin-top: 3px;">
+      <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-sm-and-down" @click="drawer = !drawer" :color="buttonColor" style="margin-top: 3px; margin-right: 11px; margin-top: 11px;">
         <v-icon size="50">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
