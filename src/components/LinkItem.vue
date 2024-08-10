@@ -1,15 +1,16 @@
 <template>
-  <a :href="url" 
+  <v-btn :href="url" 
      class="link-item" 
-     :style="{ backgroundColor: color || '' }" 
      target="_blank" 
+     color="white"
+     size="x-large"
      rel="noopener noreferrer">
     <div class="link-content">
       <span class="title">{{ title }}</span>
-      <img v-if="albumArt" :src="albumArt" alt="Album Art" class="album-art minimal-shadow" />
+      <img v-if="albumArt" :src="albumArt" alt="Album Art" class="album-art" />
       <span v-if="subtitle" class="subtitle">{{ subtitle }}</span>
     </div>
-  </a>
+  </v-btn>
 </template>
 
 <script>
@@ -42,21 +43,19 @@ export default {
 
 <style scoped>
 .link-item {
-  display: block;
-  padding: 15px;
-  text-align: center;
-  /* background-color: #ffffff; */
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  text-decoration: none;
+  /* padding: 15px; */
+  /* text-align: center; */
+  /* border: 1px solid #e0e0e0; */
+  font-size: 15px !important;
   color: #333333;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 25px;
 }
 
 .link-item:hover {
-  background-color: #e0e0e0;
-  color: #000000;
+  /* background-color: #003299 !important; Lighter blue for the hover background */
+  /* color: #ffffff; White text color on hover */
 }
 
 .link-content {
@@ -76,6 +75,7 @@ export default {
 
 .title {
   text-transform: uppercase;
+  color: black;
 }
 
 .subtitle {
@@ -83,9 +83,5 @@ export default {
   color: #666666;
   margin-top: 5px;
   text-transform: uppercase;
-}
-
-.minimal-shadow {
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12); */
 }
 </style>

@@ -23,7 +23,6 @@
         :subtitle="link.subtitle"
         :url="link.url"
         :album-art="link.albumArt"
-        :color="link.color"
       />
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
@@ -48,13 +47,13 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.saintshill.church/live-album-recording' },
-        { title: 'Pre-save Single "God is Good"', subtitle: "Releasing August, 11th", url: 'https://www.spotify.com',  albumArt: single1URL },
+        { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.saintshill.church/live-album-recording', color: '#0054ff' },
+        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  color: '#0054ff' },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
         // { title: 'Pre-save Debut Album "Family"', subtitle: "Releasing August, 30th", url: 'https://www.spotify.com', albumArt: Link3URL },
-        { title: 'Pre-Order "Family" On Vinyl', url: 'https://saintshillmusic.com/merch', albumArt: Link3URL },
+        { title: 'Pre-Order "Family" On Vinyl', url: 'https://saintshillmusic.com/merch', color: '#0054ff' },
       ],
     };
   },
@@ -67,7 +66,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .header {
