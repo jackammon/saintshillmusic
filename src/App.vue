@@ -5,23 +5,30 @@
       color="rgba(0, 0, 0, 0.0)"
       class="nav"
     >
+      <!-- <v-btn v-if="isHome && !drawer" variant="plain" class="hidden-sm-and-down" :color="buttonColor" to='/music'>Music</v-btn>
+      <v-btn v-if="isHome && !drawer" variant="plain" class="hidden-sm-and-down" :color="buttonColor" to='/events' >Events</v-btn>
+      <v-btn v-if="isHome && !drawer" variant="plain" class="hidden-sm-and-down" :color="buttonColor" to='/links' >Links</v-btn> -->
       <v-spacer style="width: 100%"></v-spacer>
 
       <v-btn icon size="x-large" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
-      <v-btn
+      <v-btn icon size="x-large" variant="plain" class="hidden-sm-and-down" @click="drawer = !drawer" :color="buttonColor" style="margin-top: 3px;">
+        <v-icon size="40">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
+      </v-btn>
+
+      <!-- <v-btn
         class="btn-size menu-padding hidden-sm-and-down"
         :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
         variant="text"
         @click="drawer = !drawer"
         :color="buttonColor"
         border
+        size="x-large"
         style="margin-top: 3px;"
       >
-        MENU
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
@@ -56,6 +63,10 @@ const buttonColor = computed(() => {
   // Check if the current route is the home page
   const isHomePage = route.path === '/';
   return isHomePage ? 'white' : (drawer.value ? '#e9e9e9' : 'black');
+});
+
+const isHome = computed(() => {
+   return route.path === '/';
 });
 
 function toHome() {
