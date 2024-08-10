@@ -48,7 +48,7 @@ export default {
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
         { title: 'Purchase Live Recording Tickets', subtitle: null, url: 'https://www.saintshill.church/live-album-recording', color: '#0054ff' },
-        { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  color: '#0054ff' },
+        // { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  color: '#0054ff' },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
@@ -99,8 +99,10 @@ export default {
 .links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 400px;
+  min-width: none;
 }
 
 .link-item {

@@ -48,6 +48,7 @@ export default {
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 25px;
+  width: 100%;
 }
 
 .link-content {
@@ -59,8 +60,8 @@ export default {
 .album-art {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
   object-fit: contain;
 }
@@ -68,12 +69,13 @@ export default {
 .title {
   text-transform: uppercase;
   color: black;
+  letter-spacing: 0em;
 }
 
 .subtitle {
   font-size: 14px;
   color: #666666;
   margin-top: 5px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 </style>

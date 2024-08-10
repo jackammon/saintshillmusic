@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="header">
       <v-col style="text-align: left;">
-        <h1 style="margin-bottom: 20px;">Family 12" Vinyl</h1>
+        <h1>Family 12" Vinyl</h1>
         <h2>Pre-Order opens August 18th</h2>
       </v-col>
     </v-row>
@@ -53,7 +53,7 @@ a {
 h1 {
     font-size: 6vw !important;
     line-height: 90%;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
     font-family: 'Hanken Grotesk' !important;
   }
 
@@ -80,7 +80,6 @@ h2 {
   margin-top: 20px;
 }
 
-
 @media (max-width: 700px) {
   .image-container {
     margin-bottom: 100px;
@@ -93,6 +92,7 @@ h2 {
 @media (max-width: 960px) {
   h1 {
     font-size: 9vw !important;
+    margin-bottom: 3vw;
   }
 
   h2 {

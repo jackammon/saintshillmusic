@@ -1,23 +1,23 @@
 <template>
-  <v-container>
+  <v-container style="min-height: 100vh; padding-top: 20px; max-width: 1200px;">
     <v-row style="margin-bottom: -20px;">
       <v-col style="text-align: left;">
         <h1 style="margin-bottom: 20px;">Family Live Album Recording</h1>
         <h2>August 31st @ Chehalem Cultural Center</h2>
       </v-col>
     </v-row>
-    <v-row style="margin-bottom: 60px;">
-      <v-col  style="text-align: left;">
-        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" style="font-family: 'Hanken Grotesk' !important;">Get Tickets</v-btn>
-      </v-col>
-    </v-row>
     <v-row>
       <v-col>
         <body style="text-align: left;">
-        Join us on Saturday, August 31st, in the Chehalem Cultural Center Ballroom for the live recording of Saints’ Hill Music’s debut worship album. 
-        <br><br>This is a unique opportunity to be part of a special evening where we capture the energy and spirit of live worship for the album. As this is a recording session, please be mindful that there may be brief pauses or retakes to ensure the best possible sound quality. 
-        <br><br>Doors open at 6:30pm, and the recording will begin at 7pm. We look forward to worshiping together and creating something beautiful that will resonate far beyond this night.
+          Join us on Saturday, August 31st, in the Chehalem Cultural Center Ballroom for the live recording of Saints’ Hill Music’s debut worship album. 
+          <br><br>This is a unique opportunity to be part of a special evening where we capture the energy and spirit of live worship for the album. As this is a recording session, please be mindful that there may be brief pauses or retakes to ensure the best possible sound quality. 
+          <br><br>Doors open at 6:30pm, and the recording will begin at 7pm. We look forward to worshiping together and creating something beautiful that will resonate far beyond this night.
         </body>
+      </v-col>
+    </v-row>
+     <v-row style="margin-bottom: 20px;">
+      <v-col style="text-align: left; margin-top: 60px;">
+        <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" style="font-family: 'Hanken Grotesk' !important; width: 100%; max-width: 400px">Get Tickets</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -30,22 +30,21 @@ a {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1vw;
   font-family: 'Hanken Grotesk' !important;
+  font-size: 1.5vw !important;
 }
 
 h1 {
-    font-size: 6vw !important;
-    line-height: 90%;
-    margin-bottom: 1vw;
-    font-family: 'Hanken Grotesk' !important;
-  }
+  font-size: 6vw !important;
+  line-height: 90%;
+  margin-bottom: 1vw;
+  font-family: 'Hanken Grotesk' !important;
+}
 
 h2 {
   font-style: normal;
-  font-size: 1.5vw;
+  font-size: 2vw;
   line-height: 110%;
   font-weight: 500;
   margin-bottom: 2vw;
@@ -53,18 +52,19 @@ h2 {
 }
 
 /* Responsive adjustments for tablets */
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 9vw !important;
-  }
-
-  h2 {
-    font-size: 2.5vw !important;
     margin-bottom: 4vw !important;
   }
 
+  h2 {
+    font-size: 3.75vw !important;
+    margin-bottom: 9vw !important;
+  }
+
   body {
-    font-size: 3vw !important;
+    font-size: 3.5vw !important;
   }
 }
 

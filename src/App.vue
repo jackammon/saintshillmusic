@@ -11,11 +11,11 @@
       <v-spacer style="width: 100%"></v-spacer>
 
       <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="buttonColor">
-        <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
+        <v-icon size="35">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
       <v-btn icon size="x-large" :ripple="false" variant="plain" class="hidden-sm-and-down" @click="drawer = !drawer" :color="buttonColor" style="margin-top: 3px;">
-        <v-icon size="40">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
+        <v-icon size="50">{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
     </v-app-bar>
