@@ -16,7 +16,7 @@
       </v-col>
     </v-row>
      <v-row>
-      <v-col style="text-align: left; margin-top: 60px;">
+      <v-col style="text-align: left; margin-top: 20px;">
         <v-btn variant="tonal" size="large" href="https://www.saintshill.church/live-album-recording" target="_blank" rel="noopener noreferrer" class="button">Get Tickets</v-btn>
       </v-col>
     </v-row>
@@ -32,7 +32,7 @@ a {
 body {
   margin-top: 10px;
   font-family: 'Hanken Grotesk' !important;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 h1 {
