@@ -4,7 +4,7 @@
       <!-- <img :src="profileImage" alt="Profile Image" class="profile-image" /> -->
       <h1 class="artist-name">{{ artistName }}</h1>
       <div class="social-links">
-        <a href="https://open.spotify.com/artist/artist_id" target="_blank" class="social-link">
+        <a href="https://open.spotify.com/artist/7zVhbvqRXFzIdF28uXV09A" target="_blank" class="social-link">
           <i class="fab fa-spotify"></i>
         </a>
         <a href="https://music.apple.com/us/artist/artist_id" target="_blank" class="social-link">
@@ -27,6 +27,9 @@
       />
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
+  <div style="width: 100%;">
+    <iframe style="border-radius:12px; margin-top: 10px !important" src="https://open.spotify.com/embed/track/7kwhz3ApVsMNYKnLq1sSrh?utm_source=generator&theme=0" width="100% !important;" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
   </div>
 </template>
 
@@ -48,8 +51,8 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
+        { title: 'Listen To Single "God is Good"', url: 'https://open.spotify.com/track/7kwhz3ApVsMNYKnLq1sSrh?si=84c64d747adb4316',  color: '#0054ff' },
         { title: 'Purchase Live Recording Tickets', subtitle: null, url: '/events', color: '#0054ff', openInNewTab: false },
-        // { title: 'Pre-save Single "God is Good"', url: 'https://www.spotify.com',  color: '#0054ff' },
         // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
