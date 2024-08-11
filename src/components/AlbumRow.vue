@@ -12,9 +12,9 @@
           <p v-for="(credit, index) in album.credits" :key="index">{{ credit }}</p>
         </div>
         <p class="release-location">{{ album.location }}</p>
-        <div class="buttons" v-if="album.urls">
-          <v-btn variant="flat" disabled size="large" rounded="0" color="black" style="margin-right: 10px;"> {{isRecordReleased(album) ? 'BUY' : 'PRE-ORDER'}}</v-btn>
-          <v-btn variant="flat" disabled size="large" rounded="0" color="black">{{isRecordReleased(album) ? 'BUY' : 'PRE-SAVE'}}</v-btn>
+        <div class="buttons">
+          <v-btn v-if="album.spotify" :href="album.spotify" variant="flat" size="large" rounded="0" color="black" style="margin-right: 10px;"> Listen Now </v-btn>
+          <v-btn v-if="album.apple" :href="album.apple" variant="flat" size="large" rounded="0" color="black">Listen Now</v-btn>
         </div>
       </div>
     </v-col> 
