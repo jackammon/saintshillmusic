@@ -27,7 +27,7 @@
       />
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
-  <div style="width: 100%;">
+  <div style="width: 100%; max-width: 400px; ">
     <iframe style="border-radius:12px; margin-top: 10px !important" src="https://open.spotify.com/embed/track/7kwhz3ApVsMNYKnLq1sSrh?utm_source=generator&theme=0" width="100% !important;" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
   </div>
