@@ -44,7 +44,7 @@ export default {
         {
           id: 2,
           albumArt: imageUrl3,
-          title: "A Holy Communion • Single",
+          title: "Holy Communion • Single",
           year: 'Releasing August, 17th',
           date: '2024-08-30',
           // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
@@ -98,7 +98,7 @@ export default {
             'Home',
             'Come What May',
             'To Know You',
-            'A Holy Communion',
+            'Holy Communion',
             'IWYLTD',
             'Reprise',
             '70x7'
