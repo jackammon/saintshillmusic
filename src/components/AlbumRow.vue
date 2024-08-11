@@ -5,13 +5,17 @@
     </v-col>
     <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
       <div class="content">
-        <h2 class="release-title">{{ album.title }}</h2>
-        <p class="release-year">{{ album.year }}</p>
-        <p class="release-info">{{ album.recordingInfo }}</p><br>
-        <div class="release-credits">
+        <h2 v-if="album.title" class="release-title">{{ album.title }}</h2>
+        <p v-if="album.year" class="release-year">{{ album.year }}</p>
+        <p v-if="album.recordingInfo" class="release-info">{{ album.recordingInfo }}</p><br>
+        <div v-if="album.credits" class="release-credits">
           <p v-for="(credit, index) in album.credits" :key="index">{{ credit }}</p>
         </div>
-        <p class="release-location">{{ album.location }}</p>
+        <div v-if="album.tracklist" class="release-credits">
+          -- Tracklist --
+          <p v-for="(track, index) in album.tracklist" :key="index">{{ track }}</p>
+        </div>
+        <p v-if="album.location" class="release-location">{{ album.location }}</p>
         <div class="buttons">
           <v-btn v-if="album.spotify" :href="album.spotify" variant="flat" size="large" rounded="0" color="black" style="margin-right: 10px;"> Listen Now </v-btn>
           <v-btn v-if="album.apple" :href="album.apple" variant="flat" size="large" rounded="0" color="black">Listen Now</v-btn>
@@ -99,7 +103,7 @@ h2 {
 }
 
 .buttons {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .buttons v-btn {

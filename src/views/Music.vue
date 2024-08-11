@@ -23,10 +23,10 @@ export default {
         {
           id: 1,
           albumArt: single1URL,
-          title: "God Is Good (YHWH)",
+          title: "God Is Good (YHWH) • Single",
           year: 'Released August, 10th',
           date: '2024-08-30',
-          recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+          // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -44,10 +44,10 @@ export default {
         {
           id: 2,
           albumArt: imageUrl3,
-          title: "A Holy Communion",
+          title: "A Holy Communion • Single",
           year: 'Releasing August, 17th',
           date: '2024-08-30',
-          recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+          // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -65,10 +65,10 @@ export default {
         {
           id: 3,
           albumArt: imageUrl4,
-          title: "Come What May",
+          title: "Come What May • Single",
           year: 'Releasing August, 24th',
           date: '2024-08-30',
-          recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+          // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -89,7 +89,21 @@ export default {
           title: "Family",
           year: 'Releasing August, 30th',
           date: '2024-08-30',
-          recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+           tracklist: [
+            'Look To The Cross',
+            'Heaviness',
+            'God Is Good (YHWH)',
+            'Living Word',
+            'Family',
+            'Home',
+            'Come What May',
+            'To Know You',
+            'A Holy Communion',
+            'IWYLTD',
+            'Reprise',
+            '70x7'
+          ],
+          // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -110,7 +124,8 @@ export default {
           title: "Family: Live From Newberg",
           year: 'Releasing October 6th, 2024',
           date: '2024-08-30',
-          recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          tracklist: ['TBA'],
+          // recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
