@@ -60,7 +60,7 @@ export default {
         // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
         // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
         // { title: 'Pre-save Debut Album "Family"', subtitle: "Releasing August, 30th", url: 'https://www.spotify.com', albumArt: Link3URL },
-        { title: 'Listen To New Single "Holy Communion"', url: 'https://open.spotify.com/track/6qZfz1MRjQvjPyLcw8KPOk?si=a5cf477a21664153',  color: '#0054ff' },
+        { title: 'Listen To Single "Holy Communion"', url: 'https://open.spotify.com/track/6qZfz1MRjQvjPyLcw8KPOk?si=a5cf477a21664153',  color: '#0054ff' },
         { title: 'Pre-Order "Family" On Vinyl', url: '/merch', color: '#0054ff', openInNewTab: false, },
       ],
     }
