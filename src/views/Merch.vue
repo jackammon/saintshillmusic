@@ -25,7 +25,7 @@
     </v-row>
     <v-row>
        <body style="text-align: left;">
-          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before pre-orders close on September 22th. Once pre-orders have closed, the vinyls will be pressed and delivered to you. </p>
+          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before pre-orders close on September 22nd. Once pre-orders have closed, the vinyls will be pressed and delivered to you. </p>
           <br>
           <p>Title: Family </p>
           <p>Artist: Saints' Hill Music </p>
