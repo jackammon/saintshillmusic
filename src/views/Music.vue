@@ -45,7 +45,7 @@ export default {
           id: 2,
           albumArt: imageUrl3,
           title: "Holy Communion • Single",
-          year: 'Releasing August, 17th',
+          year: 'Released August, 17th',
           date: '2024-08-30',
           // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
@@ -59,14 +59,14 @@ export default {
           //   "Keys, Guitar, Bass, Drums / Michael Rabb",
           // ],
           // location: "These songs were written and recorded in Newberg, Oregon.",
-          // spotify: 'https://open.spotify.com/album/0cjHRLHO4KElvDPNo4icU6',
+          spotify: 'https://open.spotify.com/track/6qZfz1MRjQvjPyLcw8KPOk?si=ef4e5705a5794381',
           // apple: null,
         },
         {
           id: 3,
           albumArt: imageUrl4,
           title: "Come What May • Single",
-          year: 'Releasing August, 24th',
+          year: 'Releasing August, 23th',
           date: '2024-08-30',
           // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
