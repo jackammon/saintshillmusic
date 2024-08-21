@@ -3,7 +3,7 @@
     <v-row class="header">
       <v-col style="text-align: left;">
         <h1>Family 12" Vinyl</h1>
-        <h2>Pre-Order Opens August 21st</h2>
+        <h2>Pre-Order Now</h2>
       </v-col>
     </v-row>
     <v-row>
@@ -21,6 +21,39 @@
             :alt="image.alt"
           ></v-carousel-item>
         </v-carousel>
+      </v-col>
+    </v-row>
+    <v-row>
+       <body style="text-align: left;">
+          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before pre-orders close on September 22th. Once pre-orders have closed, the vinyls will be pressed and delivered to you. </p>
+          <br>
+          <p>Title: Family </p>
+          <p>Artist: Saints' Hill Music </p>
+          <p>Format: 12” Vinyl (180 gram)</p>
+          <p>Release Date:&nbsp;August 30, 2024</p>
+          <br>
+          <p>Tracklist:</p>
+          <br>
+          <p>01) Look To The Cross</p>
+          <p>02) Heaviness</p>
+          <p>03) God Is Good (YHWH)</p>
+          <p>04) Living Word</p>
+          <p>05) Family</p>
+          <p>06) Home</p>
+          <p>07) Come What May</p>
+          <p>08) To Know You</p>
+          <p>09) Holy Communion</p>
+          <p>10) IWYLTD</p>
+          <p>11) Reprise</p>
+          <p>12) 70x7</p>
+          <br>
+
+          <p>This product is currently on pre-order with an expected ship date of October 2024. Date subject to change.</p>
+        </body>
+    </v-row>
+    <v-row>
+      <v-col style="text-align: left; margin-top: 20px;">
+        <v-btn color="#0054ff" variant="flat" size="large" href="https://store.saintshillmusic.com/products/family-vinyl" target="_blank" rel="noopener noreferrer" class="button">Purchase</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -78,12 +111,17 @@ h2 {
   margin-top: 20px;
 }
 
+.button {
+  font-family: 'Hanken Grotesk' !important; 
+  width: 200px;
+}
+
 @media (max-width: 700px) {
-  .image-container {
-    margin-bottom: 100px;
-  }
   .header {
     margin-bottom: -80px; 
+  }
+  .button {
+    width: 100%;
   }
 }
 
@@ -97,4 +135,5 @@ h2 {
     font-size: 3vw !important;
   }
 }
+
 </style>
