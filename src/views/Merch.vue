@@ -48,7 +48,7 @@
           <p>12) 70x7</p>
           <br>
 
-          <p>This product is currently on pre-order with an expected ship date of October 2024. Date subject to change.</p>
+          <p>This product is currently on pre-order with an expected ship date of November 2024. Date subject to change.</p>
         </body>
     </v-row>
     <v-row>
