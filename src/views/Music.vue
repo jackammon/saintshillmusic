@@ -66,7 +66,7 @@ export default {
           id: 3,
           albumArt: imageUrl4,
           title: "Come What May • Single",
-          year: 'Releasing August, 23th',
+          year: 'Released August, 23th',
           date: '2024-08-30',
           // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
@@ -80,7 +80,7 @@ export default {
           //   "Keys, Guitar, Bass, Drums / Michael Rabb",
           // ],
           // location: "These songs were written and recorded in Newberg, Oregon.",
-          // spotify: 'https://open.spotify.com/album/0cjHRLHO4KElvDPNo4icU6',
+          spotify: 'https://open.spotify.com/track/3FBhc1nDM61UtkqXmWqtO0?si=a31389c8f62445a0',
           // apple: null,
         },
         {
