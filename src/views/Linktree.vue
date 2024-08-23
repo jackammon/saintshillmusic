@@ -10,7 +10,7 @@
         <a href="https://music.apple.com/us/artist/saints-hill-music/1761954685" target="_blank" class="social-link">
           <i class="fab fa-apple"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UC_LgOMDAtABt5kXzV1CPMhw" target="_blank" class="social-link">
+        <a href="https://www.youtube.com/@SaintsHillMusic" target="_blank" class="social-link">
           <i class="fab fa-youtube"></i>
         </a>
         <a href="https://music.amazon.com/artists/B0DCNKV7WG/saints'-hill-music" target="_blank" class="social-link">
