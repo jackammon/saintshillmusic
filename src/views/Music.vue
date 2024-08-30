@@ -87,7 +87,7 @@ export default {
           id: 4,
           albumArt: imageUrl1,
           title: "Family",
-          year: 'Releasing August, 30th',
+          year: 'Released August, 30th',
           date: '2024-08-30',
            tracklist: [
             'Look To The Cross',
@@ -115,7 +115,7 @@ export default {
           //   "Keys, Guitar, Bass, Drums / Michael Rabb",
           // ],
           // location: "These songs were written and recorded in Newberg, Oregon.",
-          // spotify: null,
+          spotify: 'https://open.spotify.com/album/3CgJsslbNCB2vhOAf28gtT?si=x9NHcISJRXWL57Noo0ZQUQ',
           // apple: null,
         },
         {

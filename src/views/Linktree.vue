@@ -31,7 +31,7 @@
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
   <div style="width: 100%; max-width: 400px; ">
-    <iframe style="border-radius:12px; margin-top: 10px !important" src="https://open.spotify.com/embed/track/3FBhc1nDM61UtkqXmWqtO0?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe style="border-radius:12px; margin-top: 10px !important" src="https://open.spotify.com/embed/album/3CgJsslbNCB2vhOAf28gtT?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
   </div>
 </template>
@@ -56,12 +56,6 @@ export default {
       links: [
         { title: 'Purchase Live Recording Tickets', subtitle: null, url: '/events', color: '#0054ff', openInNewTab: false },
         { title: 'Pre-Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
-        { title: 'Listen To Single "God is Good"', url: 'https://open.spotify.com/track/7kwhz3ApVsMNYKnLq1sSrh?si=84c64d747adb4316',  color: '#0054ff' },
-        // { title: 'Live Recording Tickets', subtitle: null, url: 'https://www.spotify.com',  albumArt: Link2URL },
-        // { title: 'Pre-save Single "Come What May"', subtitle: "Releasing August, 25th", url: 'https://www.spotify.com',  albumArt: single2URL },
-        // { title: 'Pre-save Single "Come What May"', url: 'https://www.spotify.com', albumArt: "https://pbcdn1.podbean.com/imglogo/image-logo/3596575/sh_podcast_logo_2_.jpg" },
-        // { title: 'Pre-save Debut Album "Family"', subtitle: "Releasing August, 30th", url: 'https://www.spotify.com', albumArt: Link3URL },
-        { title: 'Listen To Single "Holy Communion"', url: 'https://open.spotify.com/track/6qZfz1MRjQvjPyLcw8KPOk?si=a5cf477a21664153',  color: '#0054ff' },
       ],
     }
   },
