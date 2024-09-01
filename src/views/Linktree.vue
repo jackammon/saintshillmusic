@@ -54,8 +54,7 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Purchase Live Recording Tickets', subtitle: null, url: '/events', color: '#0054ff', openInNewTab: false },
-        { title: 'Pre-Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
+        { title: 'Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
       ],
     }
   },
