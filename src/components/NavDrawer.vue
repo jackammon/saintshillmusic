@@ -25,7 +25,7 @@ const menuItems = [
   { title: 'Music', link: '/music' },
   { title: 'Merch', link: '/merch' },
   { title: 'Links', link: '/links' },
-  { title: 'Live Recording', link: '/events' },
+  // { title: 'Live Recording', link: '/events' },
   // { title: 'About', link: '/about' },
 ];
 
