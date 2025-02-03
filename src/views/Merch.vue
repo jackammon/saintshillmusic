@@ -25,7 +25,7 @@
     </v-row>
     <v-row>
        <body style="text-align: left;">
-          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before pre-orders close on September 22nd. Once pre-orders have closed, the vinyls will be pressed and delivered to you. </p>
+          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before we run out. We've placed our order and the vinyls are being pressed and will delivered to you soon. </p>
           <br>
           <p>Title: Family </p>
           <p>Artist: Saints' Hill Music </p>
@@ -48,7 +48,7 @@
           <p>12) 70x7</p>
           <br>
 
-          <p>This product is currently on pre-order with an expected ship date of November 2024. Date subject to change.</p>
+          <p>This product has a limited quantity with an expected delivery date of April 2025. Date subject to change.</p>
         </body>
     </v-row>
     <v-row>
