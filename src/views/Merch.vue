@@ -3,7 +3,7 @@
     <v-row class="header">
       <v-col style="text-align: left;">
         <h1>Family 12" Vinyl</h1>
-        <h2>Pre-Order Now</h2>
+        <h2>Order Now</h2>
       </v-col>
     </v-row>
     <v-row>
