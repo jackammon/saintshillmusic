@@ -59,7 +59,7 @@ export default {
           id: 2,
           albumArt: imageUrl2,
           title: "Family: Live From Newberg",
-          year: 'Releasing October 6th, 2024',
+          year: 'Releasing Spring, 2025',
           date: '2024-08-30',
          tracklist: [
             'Look To The Cross',
@@ -68,13 +68,9 @@ export default {
             'To Know You',
             'Legacy',
             'Come What May',
-            'Living Word',
             'Family',
             'Home',
             'God Is Good (YHWH)',
-            'IWYLTD',
-            'Reprise / 70x7',
-            'Heaviness'
           ],
           // recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
