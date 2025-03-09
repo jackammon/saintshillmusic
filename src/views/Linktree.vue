@@ -64,7 +64,17 @@
           loading="lazy">
         </iframe>
       </div>
+
+      <!-- YouTube Video Card -->
     </div>
+    <div class="video-card" style="margin-top: 6px;">
+        <iframe 
+          src="https://www.youtube.com/embed/spQyEbtmk68?si=JWNOsU-_7ThzkHhm"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
   </div>
 </template>
 
