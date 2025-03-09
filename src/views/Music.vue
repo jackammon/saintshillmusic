@@ -71,6 +71,8 @@ export default {
             'Family',
             'Home',
             'God Is Good (YHWH)',
+            'IWYLTD',
+            'Heaviness'
           ],
           // recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [

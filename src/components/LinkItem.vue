@@ -51,7 +51,7 @@ export default {
   color: #333333;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 25px;
+  border-radius: 12px;
   width: 100%;
 }
 

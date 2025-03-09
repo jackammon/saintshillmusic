@@ -25,7 +25,7 @@
     </v-row>
     <v-row>
        <body style="text-align: left;">
-          <p>Pre-order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy before we run out. We've placed our order and the vinyls are being pressed and will delivered to you soon. </p>
+          <p>Order the debut album "Family" from Saints' Hill Music. This limited release will only be available for a single run, so be sure to secure your copy. The vinyl are currently in production will delivered to you soon. </p>
           <br>
           <p>Title: Family </p>
           <p>Artist: Saints' Hill Music </p>

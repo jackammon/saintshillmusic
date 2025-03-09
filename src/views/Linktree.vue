@@ -30,9 +30,41 @@
       />
       <div class="empty" v-if="!links.length">come back soon for new updates</div>
     </div>
-  <div style="width: 100%; max-width: 400px; ">
-    <iframe style="border-radius:12px; margin-top: 10px !important" src="https://open.spotify.com/embed/album/3CgJsslbNCB2vhOAf28gtT?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div>
+
+    <!-- YouTube Video Card -->
+    <div class="video-card">
+      <iframe 
+        src="https://www.youtube.com/embed/lAjfBxAEidY?si=kkjGpt6NI6K9b3Mc"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Music Embeds Container -->
+    <div class="music-embeds">
+      <!-- Spotify Embed -->
+      <div>
+        <iframe 
+          src="https://open.spotify.com/embed/album/3CgJsslbNCB2vhOAf28gtT?utm_source=generator&theme=0" 
+          frameBorder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Future Apple Music Embed -->
+      <div>
+        <iframe 
+          src="https://embed.music.apple.com/us/album/family/1764921686" 
+          frameBorder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,18 +99,14 @@ export default {
   flex-direction: column;
   align-items: center;
   min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto; /* centers the container itself */
 }
 
 .header {
   text-align: center;
   margin-bottom: 20px;
 }
-
-/* .profile-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-} */
 
 .artist-name {
   font-size: 35px;
@@ -102,23 +130,56 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px;
-  min-width: none;
 }
 
 .link-item {
   margin: 10px 0;
 }
 
-.empty {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Hanken Grotesk' !important;
-  text-transform: uppercase;
-  color: black;
-  letter-spacing: -.02em !important;
-  text-align: left;
+/* Video card styling with extra spacing */
+.video-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+}
+
+/* New container for the music players */
+.music-embeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* adds space between the Spotify and Apple Music embeds */
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Each embed takes up equal space with a minimum width */
+.music-embeds > div {
+  flex: 1 1 300px;
+}
+
+/* Ensure the iframes have consistent styling */
+.music-embeds iframe {
+  width: 100%;
+  height: 352px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0px 3px 1px -2px var(--v-shadow-key-umbra-opacity, rgba(0, 0, 0, 0.2)), 0px 2px 2px 0px var(--v-shadow-key-penumbra-opacity, rgba(0, 0, 0, 0.14)), 0px 1px 5px 0px var(--v-shadow-key-ambient-opacity, rgba(0, 0, 0, 0.12));
+}
+
+/* On smaller screens, stack the embeds vertically */
+@media (max-width: 768px) {
+  .music-embeds {
+    flex-direction: column;
+  }
 }
 </style>
+
