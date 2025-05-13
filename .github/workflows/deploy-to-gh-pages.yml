@@ -30,7 +30,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'  # Specifies the Node.js version
-        cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
+        # commenting out cache for now - getting 422 issues with it
+        # cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
 
       
     - name: Install Dependencies
