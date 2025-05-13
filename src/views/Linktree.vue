@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="links">
-      <LinkItem
+      <!-- <LinkItem
         v-for="(link, index) in links"
         :key="index"
         :title="link.title"
@@ -27,8 +27,8 @@
         :url="link.url"
         :album-art="link.albumArt"
         :open-in-new-tab="link.openInNewTab"
-      />
-      <div class="empty" v-if="!links.length">come back soon for new updates</div>
+      /> -->
+      <!-- <div class="empty" v-if="!links.length">come back soon for new updates</div> -->
     </div>
 
     <!-- YouTube Video Card -->
@@ -96,7 +96,7 @@ export default {
       profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
-        { title: 'Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
+       // { title: 'Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
       ],
     }
   },

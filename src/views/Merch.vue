@@ -3,7 +3,7 @@
     <v-row class="header">
       <v-col style="text-align: left;">
         <h1>Family 12" Vinyl</h1>
-        <h2>Order Now</h2>
+        <h2>Sold Out</h2>
       </v-col>
     </v-row>
     <v-row>
@@ -53,7 +53,7 @@
     </v-row>
     <v-row>
       <v-col style="text-align: left; margin-top: 20px;">
-        <v-btn color="#0054ff" variant="flat" size="large" href="https://store.saintshillmusic.com/products/family-vinyl" target="_blank" rel="noopener noreferrer" class="button">Purchase</v-btn>
+        <v-btn color="#0054ff" variant="flat" size="large" disabled href="https://store.saintshillmusic.com/products/family-vinyl" target="_blank" rel="noopener noreferrer" class="button">Sold Out</v-btn>
       </v-col>
     </v-row>
   </v-container>

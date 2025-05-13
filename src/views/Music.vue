@@ -26,7 +26,7 @@ export default {
           title: "Family",
           year: 'Released August, 30th',
           date: '2024-08-30',
-           tracklist: [
+          tracklist: [
             'Look To The Cross',
             'Heaviness',
             'God Is Good (YHWH)',
@@ -40,7 +40,7 @@ export default {
             'Reprise',
             '70x7'
           ],
-          // recordingInfo: "Recorded recorded at The Woodshed (Woodman's house) in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+          recordingInfo: "Written and recorded in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -59,22 +59,23 @@ export default {
           id: 2,
           albumArt: imageUrl2,
           title: "Family: Live From Newberg",
-          year: 'Releasing Spring, 2025',
-          date: '2024-08-30',
-         tracklist: [
-            'Look To The Cross',
-            'We Belong To Him',
-            'Holy Communion',
-            'To Know You',
-            'Legacy',
-            'Come What May',
-            'Family',
-            'Home',
-            'God Is Good (YHWH)',
-            'IWYLTD',
-            'Heaviness'
+          year: 'Released March 28th, 2025',
+          date: '2025-03-28',
+          tracklist: [
+            'Look To The Cross - Live',
+            'We Belong To Him - Live',
+            'God Is Good (YHWH) - Live',
+            'Legacy - Live',
+            'Come What May - Live',
+            'Family - Live',
+            'Home - Live',
+            'Holy Communion - Live',
+            'To Know You - Live',
+            'IWYLTD - Live',
+            'Heaviness - Live'
           ],
-          // recordingInfo: "Recorded live at the Chehalem Cultural Center / Produced and Mastered by Michael Rabb / Artwork by Tracy White",
+          recordingInfo: "Written and recorded live in Newberg, Oregon / Produced by Michael Rabb and Gregory Woodman / Mastered by Michael Rabb / Artwork by Tracy White",
+
           // credits: [
           //   "Vocals, Guitar / Jacob Vigil",
           //   "Vocals / Hannah Brown",
@@ -86,6 +87,7 @@ export default {
           //   "Keys, Guitar, Bass, Drums / Michael Rabb",
           // ],
           // location: "These songs were written and recorded in Newberg, Oregon.",
+          spotify: 'https://open.spotify.com/album/49GIZappb71K3JBlsCZQpP?si=JdUFFullQ9q-eq8SH2c2zw',
           urls: {
             spotify: null,
             apple: null,
