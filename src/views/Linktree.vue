@@ -31,6 +31,14 @@
       <!-- <div class="empty" v-if="!links.length">come back soon for new updates</div> -->
     </div>
 
+    <!-- Unto Us Single -->
+    <div class="single-card">
+      <a href="https://open.spotify.com/artist/7zVhbvqRXFzIdF28uXV09A" target="_blank">
+        <img src="@/assets/unto_us.jpeg" alt="Unto Us Single" />
+      </a>
+      <p class="single-text">New Single - Out Friday 28th</p>
+    </div>
+
     <!-- YouTube Video Card -->
     <div class="video-card">
       <iframe 
@@ -84,6 +92,7 @@ import LinkItem from '../components/LinkItem.vue'
 // import single2URL from '@/assets/come-what-may.webp'
 // import Link2URL from '@/assets/live-from-newberg.webp'
 // import Link3URL from '@/assets/lp_front.webp'
+import imageUrl1 from '@/assets/unto_us.jpeg'
 
 
 export default {
@@ -109,7 +118,7 @@ export default {
   flex-direction: column;
   align-items: center;
   min-height: 90vh;
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: 0 auto; /* centers the container itself */
 }
 
@@ -190,6 +199,45 @@ export default {
   .music-embeds {
     flex-direction: column;
   }
+}
+
+/* Single card styling */
+.single-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px 0;
+}
+
+.single-card a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.single-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+              0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
+}
+
+.single-card img:hover {
+  transform: scale(1.01);
+}
+
+.single-text {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
 }
 </style>
 
