@@ -17,8 +17,8 @@
         </div>
         <p v-if="album.location" class="release-location">{{ album.location }}</p>
         <div v-if="isRecordReleased" class="buttons">
-          <v-btn v-if="album.spotify" :href="album.spotify" variant="flat" size="large" rounded="0" color="black" style="margin-right: 10px;"> Listen Now </v-btn>
-          <v-btn v-if="album.apple" :href="album.apple" variant="flat" size="large" rounded="0" color="black">Listen Now</v-btn>
+          <v-btn v-if="album.spotify" :href="album.spotify" variant="flat" rounded="0" color="black">Listen Now</v-btn>
+          <v-btn v-if="album.apple" :href="album.apple" variant="flat" rounded="0" color="black">Listen Now</v-btn>
         </div>
       </div>
     </v-col> 
@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .album-row {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 img {
@@ -89,7 +89,7 @@ h2 {
 }
 
 .release-year {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
@@ -100,13 +100,13 @@ h2 {
 }
 
 .release-credits {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: .6em;
   font-family: monospace;
 }
 
 .release-location {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-size: .6em;
   font-family: monospace;
 }
@@ -116,8 +116,10 @@ h2 {
   text-align: left;
 }
 
-.buttons v-btn {
-  margin-right: 1rem;
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
 }
 
 .minimal-shadow {
@@ -143,15 +145,19 @@ h2 {
   }
   .content {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 16px;
   }
 
   .album-row {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
-  .release-title { 
+  .release-title {
     margin-bottom: 5px !important;
+  }
+
+  .buttons {
+    justify-content: center;
   }
 }
 </style>
