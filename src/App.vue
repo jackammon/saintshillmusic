@@ -22,6 +22,9 @@
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
 
+    <!-- Announcement Banner (appears on all pages) -->
+    <AnnouncementBanner />
+
     <!-- floating nav footer -->
     <div class="floating-footer" :class="{ 'footer-visible': drawer }">
       Saints' Hill Music
@@ -42,6 +45,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import NavDrawer from './components/NavDrawer.vue'
+import AnnouncementBanner from './components/AnnouncementBanner.vue'
 import { useRouter, useRoute } from 'vue-router'
 
 const drawer = ref(false)

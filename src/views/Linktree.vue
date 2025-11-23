@@ -31,10 +31,10 @@
       <!-- <div class="empty" v-if="!links.length">come back soon for new updates</div> -->
     </div>
 
-    <!-- Unto Us Single -->
+    <!-- FOREVER AND EVER (Emmanuel) Single -->
     <div class="single-card">
       <a href="https://open.spotify.com/artist/7zVhbvqRXFzIdF28uXV09A" target="_blank">
-        <img src="@/assets/unto_us.jpeg" alt="Unto Us Single" />
+        <img src="@/assets/unto_us.jpeg" alt="FOREVER AND EVER (Emmanuel) Single" />
       </a>
       <p class="single-text">New Single - Out Friday, Nov 28th</p>
     </div>
@@ -102,13 +102,12 @@ export default {
   },
   data() {
     return {
-      profileImage: 'path/to/your/profile-image.jpg',
       artistName: 'SAINTS\' HILL MUSIC',
       links: [
        // { title: 'Order "Family" On Vinyl', url: 'https://store.saintshillmusic.com/products/family-vinyl', color: '#0054ff', openInNewTab: true, },
       ],
     }
-  },
+  }
 }
 </script>
 
