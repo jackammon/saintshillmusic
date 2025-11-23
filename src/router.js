@@ -29,19 +29,10 @@ const routes = [
     component: Event
   },
   {
-    path: '/family',
-    name: 'family',
-    component: Linktree
-  },
-  {
-    path: '/updates',
-    name: 'updates',
-    component: Linktree
-  },
-  {
     path: '/links',
     name: 'links',
-    component: Linktree
+    component: Linktree,
+    alias: ['/link', '/qr', '/updates', '/update', '/linktree', '/news', '/family']
   },
   {
     // Redirect any unmatched paths to root
