@@ -36,7 +36,7 @@
       <a href="https://open.spotify.com/artist/7zVhbvqRXFzIdF28uXV09A" target="_blank">
         <img src="@/assets/unto_us.jpeg" alt="FOREVER AND EVER (Emmanuel) Single" />
       </a>
-      <p class="single-text">New Single - Out Friday, Nov 28th</p>
+      <p class="single-text">FOREVER AND EVER (Emmanuel) - Out Friday, Nov 28th</p>
     </div>
 
     <!-- YouTube Video Card -->
