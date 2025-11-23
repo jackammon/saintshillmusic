@@ -6,7 +6,7 @@
     <v-col :cols="mdAndUp ? 7 : 12" class="gap-left">
       <div class="content">
         <h2 v-if="album.title" class="release-title">{{ album.title }}</h2>
-        <p v-if="album.year" class="release-year">{{ album.year }}</p>
+        <p v-if="releaseText" class="release-year">{{ releaseText }}</p>
         <p v-if="album.recordingInfo" class="release-info">{{ album.recordingInfo }}</p><br>
         <div v-if="album.credits" class="release-credits">
           <p v-for="(credit, index) in album.credits" :key="index">{{ credit }}</p>
@@ -16,7 +16,7 @@
           <p v-for="(track, index) in album.tracklist" :key="index">{{ track }}</p>
         </div>
         <p v-if="album.location" class="release-location">{{ album.location }}</p>
-        <div class="buttons">
+        <div v-if="isRecordReleased" class="buttons">
           <v-btn v-if="album.spotify" :href="album.spotify" variant="flat" size="large" rounded="0" color="black" style="margin-right: 10px;"> Listen Now </v-btn>
           <v-btn v-if="album.apple" :href="album.apple" variant="flat" size="large" rounded="0" color="black">Listen Now</v-btn>
         </div>
@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import { computed } from 'vue';
 import { useDisplay } from 'vuetify';
 import dayjs from 'dayjs';
 import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
@@ -40,16 +41,28 @@ export default {
       required: true
     }
   },
-  setup () {
+  setup (props) {
     const { mdAndUp } = useDisplay();
 
-    const isRecordReleased = (record) => {
+    const isRecordReleased = computed(() => {
+      if (!props.album.date) return false;
       const now = dayjs();
-      const releaseDate = record.date ? dayjs(record.date) : null;
-      return releaseDate && now.isSameOrAfter(releaseDate);
-    };
+      const releaseDate = dayjs(props.album.date);
+      return now.isSameOrAfter(releaseDate, 'day');
+    });
 
-    return { mdAndUp, isRecordReleased };
+    const releaseText = computed(() => {
+      if (!props.album.date) return null;
+
+      const releaseDate = dayjs(props.album.date);
+      const formattedDate = releaseDate.format('MMMM D, YYYY');
+
+      return isRecordReleased.value
+        ? `Released ${formattedDate}`
+        : `Releasing ${formattedDate}`;
+    });
+
+    return { mdAndUp, isRecordReleased, releaseText };
   }
 }
 </script>
@@ -72,6 +85,7 @@ h2 {
 .release-title {
   margin-bottom: 0px !important;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 .release-year {
@@ -102,10 +116,6 @@ h2 {
   text-align: left;
 }
 
-.buttons {
-  /* margin-top: 1rem; */
-}
-
 .buttons v-btn {
   margin-right: 1rem;
 }
@@ -122,6 +132,9 @@ h2 {
   .gap-left {
     padding-left: 2vw;
   }
+  .release-title { 
+    margin-bottom: 5px !important;
+  }
 }
 
 @media (max-width: 960px) {
@@ -134,7 +147,11 @@ h2 {
   }
 
   .album-row {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
+
+  .release-title { 
+    margin-bottom: 5px !important;
+  }
 }
 </style>
