@@ -1,7 +1,8 @@
 <template>
   <div class="announcement-banner" v-if="showBanner && !isExpired">
     <p class="banner-text">
-      {{ bannerMessage }} →
+      {{ bannerMessage }}
+      <span class="arrow">→</span>
       <router-link to="/links" class="banner-link">{{ ctaText }}</router-link>
     </p>
     <button class="close-button" @click="closeBanner">×</button>
@@ -95,10 +96,13 @@ export default {
   font-weight: 500;
 }
 
+.arrow {
+  margin: 0 8px;
+}
+
 .banner-link {
   color: white;
   text-decoration: underline;
-  margin-left: 8px;
   font-weight: 600;
 }
 
