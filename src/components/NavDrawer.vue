@@ -2,32 +2,54 @@
     <div class="nav-drawer" ref="drawer">
       <v-list style="background-color: #0054ff; color: #fffdf9; margin-top: 84px;">
           <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
-            <v-list-item-title :color="isOpen ? '#0054ff' : '#e9e9e9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
+            <v-list-item-title :color="isOpen ? '#0054ff' : '#e9e9e9'" class="text-left tab nav-link">
+              {{ item.title }}
+              <span v-if="item.isNew" class="new-badge">NEW!</span>
+            </v-list-item-title>
           </v-list-item>
       </v-list>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import gsap from 'gsap';
-import { useRouter } from 'vue-router'
+import { useRouter } from 'vue-router';
+import { albums } from '@/composables/useAlbums';
+import dayjs from 'dayjs';
 
-const router = useRouter()
+const router = useRouter();
 const drawer = ref(null);
 const emit = defineEmits(['update:isOpen']);
 const props = defineProps({
   isOpen: Boolean
 });
 
-const menuItems = [
+// Check if "NEW!" badge should be shown for Music
+const showNewMusicBadge = computed(() => {
+  // Find the album with the highest ID (latest release)
+  const latestAlbum = albums.reduce((latest, album) => {
+    return album.id > latest.id ? album : latest;
+  }, albums[0]);
+
+  if (!latestAlbum?.date) return false;
+
+  const now = dayjs();
+  const releaseDate = dayjs(latestAlbum.date);
+  const ninetyDaysAfterRelease = releaseDate.add(90, 'day');
+
+  // Show badge if before release OR within 90 days after release
+  return now.isBefore(ninetyDaysAfterRelease);
+});
+
+const menuItems = computed(() => [
   { title: 'Home', link: '/' },
-  { title: 'Music', link: '/music' },
+  { title: 'Music', link: '/music', isNew: showNewMusicBadge.value },
   { title: 'Merch', link: '/merch' },
   { title: 'Links', link: '/links' },
   // { title: 'Live Recording', link: '/events' },
   // { title: 'About', link: '/about' },
-];
+]);
 
 function toLink(link) {
   emit('update:isOpen', false);  // Emit event to update isOpen in the parent
@@ -64,9 +86,35 @@ watch(() => props.isOpen, (newValue) => {
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding-left: 21px;
   padding-right: 21px;
+}
+
+.new-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #0054ff;
+  font-size: 14px !important;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-left: 12px;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+  animation: pulse-badge 2s infinite;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 ul {
   list-style: none;
