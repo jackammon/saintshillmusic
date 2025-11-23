@@ -18,8 +18,8 @@ import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
 dayjs.extend(isSameOrAfter);
 
 // CONFIGURATION - Update these dates as needed
-const RELEASE_DATE = '2025-11-28'; // Release date for the single
-const EXPIRES_ON = '2026-02-26'; // When to stop showing banner (90 days after release)
+const RELEASE_DATE = '2024-11-28'; // Release date for the single
+const EXPIRES_ON = '2024-02-26'; // When to stop showing banner (90 days after release)
 
 export default {
   name: 'AnnouncementBanner',

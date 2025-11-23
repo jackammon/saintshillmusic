@@ -49,17 +49,17 @@ export const albums = [
       apple: null,
     }
   },
-  {
-    id: 3,
-    albumArt: imageUrl3,
-    title: "FOREVER AND EVER (Emmanuel)",
-    date: '2025-11-28',
-    credits: [],
-    urls: {
-      spotify: null,
-      apple: null,
-    }
-  },
+  // {
+  //   id: 3,
+  //   albumArt: imageUrl3,
+  //   title: "FOREVER AND EVER (Emmanuel)",
+  //   date: '2025-11-28',
+  //   credits: [],
+  //   urls: {
+  //     spotify: null,
+  //     apple: null,
+  //   }
+  // },
 ];
 
 export function useAlbums() {
