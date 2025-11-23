@@ -45,8 +45,10 @@ const showNewMusicBadge = computed(() => {
 const menuItems = computed(() => [
   { title: 'Home', link: '/' },
   { title: 'Music', link: '/music', isNew: showNewMusicBadge.value },
-  { title: 'Merch', link: '/merch' },
+  // { title: 'Merch', link: '/merch' },
+  // { title: 'Resources', link: '/resources' },
   { title: 'Links', link: '/links' },
+  // { title: 'Resources', link: '/resources' },
   // { title: 'Live Recording', link: '/events' },
   // { title: 'About', link: '/about' },
 ]);
