@@ -23,7 +23,7 @@
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
 
     <!-- floating nav footer -->
-    <div v-if="drawer" class="floating-footer">
+    <div class="floating-footer" :class="{ 'footer-visible': drawer }">
       Saints' Hill Music
     </div>
 
@@ -91,6 +91,15 @@ function toHome() {
   color: #e9e9e9;
   text-transform: uppercase;
   font-family: 'Rubik';
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease 0.28s;
+}
+
+.floating-footer.footer-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.1s ease 0.7s;
 }
 
 .header-img {
