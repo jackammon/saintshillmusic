@@ -16,7 +16,8 @@ const routes = [
   {
     path: '/music',
     name: 'music',
-    component: Music
+    component: Music,
+    alias: ['/discography']
   },
   {
     path: '/merch',
