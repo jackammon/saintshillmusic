@@ -32,11 +32,22 @@
     </div>
 
     <!-- FOREVER AND EVER (Emmanuel) Single -->
-    <div class="single-card">
+    <!-- <div class="single-card">
       <a href="https://open.spotify.com/artist/7zVhbvqRXFzIdF28uXV09A" target="_blank">
         <img src="@/assets/unto_us.jpeg" alt="FOREVER AND EVER (Emmanuel) Single" />
       </a>
       <p class="single-text">FOREVER AND EVER (Emmanuel) - Out Friday, Nov 28th</p>
+    </div> -->
+
+    <div class="music-embeds">
+      <iframe 
+      data-testid="embed-iframe" 
+      style="border-radius:12px" 
+      src="https://open.spotify.com/embed/album/3yDYcVwkCxu9msaF1RcsB8?utm_source=generator"  
+      frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy"></iframe>
     </div>
 
     <!-- YouTube Video Card -->
