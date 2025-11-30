@@ -52,11 +52,16 @@ export const albums = [
   {
     id: 3,
     albumArt: imageUrl3,
-    title: "FOREVER AND EVER (Emmanuel)",
+    title: "Forever and Ever (Emmanuel)",
     date: '2025-11-28',
+    tracklist: [
+      'Forever and Ever (Emmanuel)',
+      'Forever and Ever (Emmanuel) [voice memo]'
+    ],
     credits: [],
+    spotify: 'https://open.spotify.com/album/3yDYcVwkCxu9msaF1RcsB8?si=PvgDcR33QNuUwiLmZjxQLw',
     urls: {
-      spotify: null,
+      spotify: 'https://open.spotify.com/album/3yDYcVwkCxu9msaF1RcsB8?si=PvgDcR33QNuUwiLmZjxQLw',
       apple: null,
     }
   },
